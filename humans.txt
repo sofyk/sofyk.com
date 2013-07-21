@@ -1,8 +1,12 @@
 /* TEAM */
 
-Owner & Developer: Your Name
-Site: yoursite.com
-Location: Your Location, Country
+Owner & Developer: Sofy Kabachek
+Site: sofyk.com
+Location: Riverside, CA, USA
+
+Developer: Evan Sosenko
+Site: evansosenko.com
+Location: Riverside, CA, USA
 
 /* SITE */
 
