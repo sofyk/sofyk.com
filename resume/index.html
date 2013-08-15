@@ -1,0 +1,97 @@
+---
+layout: default
+title: Resume
+
+resume:
+  - type: section
+    id: experience
+
+  - type: entry
+    name: Flowserve Corporation
+    start: 06/12/2012
+    end: present
+    location: 27455 Tierra Alta Way, Temecula, CA 92590
+    description: R &amp; D Engineer
+
+  - type: section
+    id: technical
+    name: technical skills
+
+  - type: list
+    lists:
+      - [ platforms, Microsoft Windows ]
+      - [ tools, Lab View, Visual Studio ]
+
+  - type: section
+    id: languages
+
+  - type: list
+    lists:
+      - [ english, fluent ]
+      - [ russian, fluent ]
+      - [ hebrew, fluent ]
+---
+
+<section id="resume">
+  <h1>{{ page.title }}</h1>
+  <nav data-magellan-expedition="fixed">
+  <dl>
+    <dt>{{ page.title }}</dt>
+    {% for resume in page.resume %}
+      {% if resume.type == 'section' %}
+
+      {% if resume.name %}
+        {% assign title = resume.name %}
+      {% else %}
+        {% assign title = resume.id %}
+      {% endif %}
+
+      <dd data-magellan-arrival="{{ resume.id }}"><a href="#{{ resume.id }}">{{ title }}</a></dd>
+
+    {% endif %}
+  {% endfor %}
+  </dl>
+  </nav>
+
+  {% for resume in page.resume %}
+    {% case resume.type %}
+    {% when 'section' %}
+
+      {% if resume.name %}
+        {% assign title = resume.name %}
+      {% else %}
+        {% assign title = resume.id %}
+      {% endif %}
+
+      {% unless forloop.first %}</section>{% endunless %}
+      <section>
+        <div id="{{ resume.id }}" class="magellan-destination" data-magellan-destination="{{ resume.id }}"></div>
+        <h2>{{ title }}</h2>
+    {% when 'entry' %}
+      <div class="entry">
+        <h3 class="name">{{ resume.name }}</h3>
+        <p class="date">{{ resume.start }}{% unless resume.start == resume.end %}–{{ resume.end }}{% endunless %}</p>
+        <div class="info">
+          <p class="location">{{ resume.location }}</p>
+          {% if resume.description %}<p class="description">{{ resume.description }}</p>{% endif %}
+        </div>
+      </div>
+    {% when 'list' %}
+      <dl class="list">
+      {% for list in resume.lists %}
+        {% for item in list %}
+          {% if forloop.first %}
+            <dt class="name">{{ item }}</dt>
+              <div class="info">
+          {% else %}
+            <dd>{{ item }}</dd>
+          {% endif %}
+          {% if forloop.last %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      </dl>
+    {% endcase %}
+  {% endfor %}
+</section>
