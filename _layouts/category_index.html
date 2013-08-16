@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<h1>{{ page.category }}</h1>
+<section class="posts">
+{% for post in site.posts %}
+  {% if post.categories contains page.category %}
+    {% include post_preview.html post=post %}
+  {% endif %}
+{% endfor %}
+</section>

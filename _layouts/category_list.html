@@ -1,0 +1,11 @@
+---
+layout: default
+title: category list
+---
+
+<h1>{{ page.title }}</h1>
+<section class="categories">
+{% for category in page.categories %}
+  <a href="/categories/{{ category }}/">{{ category }}</a>
+{% endfor %}
+</section>
