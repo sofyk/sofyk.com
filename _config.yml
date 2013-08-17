@@ -9,7 +9,7 @@ assets:
     css: sass
     js: uglifier
 
-# uncomment below to enable deploy
+# Uncomment below to enable deploy.
 :deploy:
   # either :rsync or :sftp
   :protocol: :sftp
@@ -22,3 +22,24 @@ assets:
   # path to remote folder where contents of _site should go
   # must have trailing slash
   :path: /home/sofyk/sofyk.com/htdocs/
+
+# Foundation Interchange markup support added to
+# Jekyll Picture Tag (https://github.com/robwierzbowski/jekyll-picture-tag)
+# Uncomment below to enable responsive images.
+# picture:
+#   markup: "interchange"
+#   source: pictures/_fullsize
+#   output: pictures
+#   presets:
+#     default:
+#       source_large:
+#         media: "(large)"
+#         width: "1440"
+#       source_medium:
+#         media: "(medium)"
+#         width: "1280"
+#       source_small:
+#         media: "(small)"
+#         width: "768"
+#       source_default:
+#         width: "500"
