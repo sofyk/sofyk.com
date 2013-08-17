@@ -1,3 +1,31 @@
+---
+header:
+  nav:
+    - name: home
+      url: /
+    - name: contact
+      url: /contact/
+    - name: résumé
+      url: /resume/
+    - name: videos
+      url: /vidoes/
+    - name: games
+      url: /games/
+
+footer:
+  nav:
+    - name: Twitter
+      url: https://twitter.com/ThatsMr_n00b_2u
+      image: twitter.com.png
+
+    - name: LinkedIn
+      url: https://www.linkedin.com/
+      image: linkedin.com.png
+
+    - name: Résumé
+      url: /resume/
+---
+
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js" lang="en" ><!--<![endif]-->
@@ -15,14 +43,38 @@
 </head>
 
 <body>
-  <header>
-    <h1><a href="/">{{ site.name }}</a></h1>
-  </header>
+  <div id="content">
+    <header class="contain-to-grid sticky">
+      <nav class="top-bar">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/">{{ site.name }}</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+        <section class="top-bar-section">
+          <ul class="left">
+          {% for item in page.header.nav %}
+            <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+          {% endfor %}
+          </ul>
+        </section>
+      </nav>
+    </header>
 
-  {{ content }}
+    {{ content }}
 
-  <footer>
-    <a href="http://www.w3.org/html/logo/"><img src="{% asset_path  html5-badge-h-css3-semantics.png %}" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics" width="165" height="64" /></a>
+    <div id="content_footer"></div>
+  </div>
+
+  <footer id="colophon">
+    <nav>
+      <ul>
+      {% for item in page.footer.nav %}
+        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+      {% endfor %}
+      </ul>
+    </nav>
   </footer>
 
   <script>
