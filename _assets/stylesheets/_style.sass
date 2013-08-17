@@ -7,3 +7,19 @@ header.fixed
 #colophon
   nav ul
     +inline-list
+
+section.posts
+  +grid-row
+
+@media #{$small}
+  div.post_row
+    +grid-column($columns: 12, $center: true)
+    height: $post_preview_height
+
+div.post.preview
+  padding: $post_preview_padding
+  @media #{$small}
+    +grid-column($columns: 6)
+
+article.post.preview
+  height: $post_preview_height
