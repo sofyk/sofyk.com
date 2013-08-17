@@ -46,6 +46,21 @@ $em-base: 16 !default
 // Change whether or not you include browser prefixes
 // $experimental: true
 
+// Custom Variables
+
+// Header
+
+$header_nav_height: emCalc(50)
+
+// Footer
+
+$footer_height: emCalc(50)
+
+// Posts
+
+$post_preview_height: emCalc(500)
+$post_preview_padding: emCalc(10)
+
 // Various global styles
 
 $default-float: left
@@ -1089,7 +1104,7 @@ $default-float: left
 // We use these to control margin and padding
 
 // $sub-nav-list-margin: emCalc(-4, 0, 18)
-$sub-nav-list-padding-top: $topbar-height
+$sub-nav-list-padding-top: 1.2 * $header_nav_height
 
 // We use this to control the definition
 
@@ -1236,7 +1251,7 @@ $sub-nav-list-padding-top: $topbar-height
 
 // Height and margin
 
-// $topbar-height: 45px
+$topbar-height: $header_nav_height
 // $topbar-margin-bottom: emCalc(30)
 
 // Control Input height for top bar
@@ -1297,16 +1312,3 @@ $sub-nav-list-padding-top: $topbar-height
 // Sticky Class
 
 // $topbar-sticky-class: ".sticky"
-
-//
-// Custom Variables
-//
-
-// Footer
-
-$footer_height: emCalc(50)
-
-// Posts
-
-$post_preview_height: emCalc(500)
-$post_preview_padding: emCalc(10)
