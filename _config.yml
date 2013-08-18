@@ -44,3 +44,16 @@ picture:
         width: '768'
       source_default:
         width: '500'
+    post_preview:
+      ppi: [ 1, 1.5, 2 ]
+      source_large:
+        media: '(large)'
+        width: '1440'
+      source_medium:
+        media: '(medium)'
+        width: '1280'
+      source_small:
+        media: '(small)'
+        width: '768'
+      source_default:
+        width: '500'
