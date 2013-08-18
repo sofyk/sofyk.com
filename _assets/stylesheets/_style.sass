@@ -5,11 +5,16 @@ div.video.youtube
 header.fixed
   height: $topbar-height
 
+nav.top-bar
+  li.icon img
+    vertical-align: middle
+    margin-right: emCalc(10)
+
 +sticky-footer( $footer_height, "#content", "#content_footer", "#colophon" )
 
 #colophon
-  nav ul
-    +inline-list
+  text-align: center
+  font-size: 0.8em
 
 section.posts
   +grid-row

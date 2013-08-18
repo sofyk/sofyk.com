@@ -1,29 +1,24 @@
 ---
 header:
   nav:
-    - name: home
-      url: /
-    - name: contact
-      url: /contact/
-    - name: résumé
-      url: /resume/
-    - name: videos
-      url: /vidoes/
-    - name: games
-      url: /games/
-
-footer:
-  nav:
-    - name: Twitter
-      url: https://twitter.com/ThatsMr_n00b_2u
-      image: twitter.com.png
-
-    - name: LinkedIn
-      url: https://www.linkedin.com/
-      image: linkedin.com.png
-
-    - name: Résumé
-      url: /resume/
+    left:
+      - name: home
+        url: /
+      - name: contact
+        url: /resume/
+      - name: résumé
+        url: /resume/
+      - name: videos
+        url: /categories/videos/
+      - name: games
+        url: /categories/games/
+    right:
+      - name: '@SofyK_'
+        url: https://twitter.com/SofyK_
+        image: ico/twitter-bird-light-bgs.svg
+      - name: LinkedIn
+        url: https://www.linkedin.com/
+        image: ico/LinkedIn-InBug-2CRev.svg
 ---
 
 <!DOCTYPE html>
@@ -54,8 +49,13 @@ footer:
         </ul>
         <section class="top-bar-section">
           <ul class="left">
-          {% for item in page.header.nav %}
+          {% for item in page.header.nav.left %}
             <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+          {% endfor %}
+          </ul>
+          <ul class="right">
+          {% for item in page.header.nav.right %}
+            <li class="icon"><a href="{{ item.url }}" title="{{ item.name }}"><img src="{{ item.image | asset_path }}" width="24" height="24" alt="{{ item.name }}" />{{ item.name }}</a></li>
           {% endfor %}
           </ul>
         </section>
@@ -68,13 +68,7 @@ footer:
   </div>
 
   <footer id="colophon">
-    <nav>
-      <ul>
-      {% for item in page.footer.nav %}
-        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
-      {% endfor %}
-      </ul>
-    </nav>
+    <p>{{ site.name }} © {{ site.time | date: '%Y' }}</p>
   </footer>
 
   <script>
