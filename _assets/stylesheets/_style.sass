@@ -1,17 +1,25 @@
+//
+// Global styles
+//
+
 div.video.youtube
   +flex-video-container
 
-// needed to keep the sticky top bar correct height
+//
+// Core layout
+//
+
+// Header
+
 header.fixed
-  height: $topbar-height
+  height: $topbar-height // needed to keep the sticky top bar correct height
 
 nav.top-bar
   li.icon img
     vertical-align: middle
     margin-right: emCalc(10)
 
-#content
-  +grid-row
+// Footer
 
 +sticky-footer( $footer_height, "#content", "#content_footer", "#colophon" )
 
@@ -19,24 +27,41 @@ nav.top-bar
   text-align: center
   font-size: 0.8em
 
-section.posts
+// Content
+
+#content
   +grid-row
+  padding: 0 $content_padding
 
-@media #{$small}
-  div.post_row
-    +grid-column($columns: 12, $center: true)
-    height: $post_preview_height
+// Posts previews
 
-div.post.preview
-  padding: $post_preview_padding
-  @media #{$small}
-    +grid-column($columns: 6)
+section.posts
+  +grid-row($behavior: nest-collapse)
 
 article.post.preview
   height: $post_preview_height
 
+// Two column previews
+@media #{$small}
+  div.post_row
+    +grid-row($behavior: nest-collapse)
+    +grid-column($columns: 12, $center: true, $collapse: true)
+    height: $post_preview_height
+  div.post.preview
+    +grid-column($columns: 6, $collapse: true)
+  article.post.preview
+    padding-right: $post_preview_padding
+
+// Single post
+
 article.post.single
-  +grid-column($columns: 8, $center: true)
+  +grid-column($columns: 12, $center: true)
+  @media #{$small}
+    +grid-column($columns: 10, $center: true)
+
+//
+// Page specific styles
+//
 
 #resume
   nav
