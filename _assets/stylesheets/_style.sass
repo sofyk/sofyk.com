@@ -10,6 +10,9 @@ nav.top-bar
     vertical-align: middle
     margin-right: emCalc(10)
 
+#content
+  +grid-row
+
 +sticky-footer( $footer_height, "#content", "#content_footer", "#colophon" )
 
 #colophon
@@ -31,6 +34,9 @@ div.post.preview
 
 article.post.preview
   height: $post_preview_height
+
+article.post.single
+  +grid-column($columns: 8, $center: true)
 
 #resume
   nav
