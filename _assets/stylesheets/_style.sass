@@ -48,6 +48,12 @@ html, body
   +grid-row
   padding: 0 $content_padding
 
+article.post
+  ul.categories
+    +inline-list
+    li
+      +label($bg: $secondary-color, $radius: 3px)
+
 // Posts previews
 
 section.posts
