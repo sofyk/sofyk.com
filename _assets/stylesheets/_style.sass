@@ -5,6 +5,12 @@
 div.video.youtube
   +flex-video-container
 
+code
+  font-family: $code_font-family
+
+div.highlight
+  +panel
+
 //
 // Core layout
 //
@@ -21,11 +27,20 @@ nav.top-bar
 
 // Footer
 
-+sticky-footer( $footer_height, "#content", "#content_footer", "#colophon" )
-
 #colophon
   text-align: center
   font-size: 0.8em
+
+// Ryan Fait's HTML5 CSS Sticky Footer
+html, body
+  height: 100%
+#wrapper
+  min-height: 100%
+  height: auto !important
+  height: 100%
+  margin: 0 auto emCalc(0 - $footer_height)
+#colophon, #push
+  height: emCalc($footer_height)
 
 // Content
 
@@ -33,22 +48,29 @@ nav.top-bar
   +grid-row
   padding: 0 $content_padding
 
+article.post
+  ul.categories
+    +inline-list
+    li
+      +label($bg: $secondary-color, $radius: 3px)
+
 // Posts previews
 
 section.posts
   +grid-row($behavior: nest-collapse)
 
 article.post.preview
-  height: $post_preview_height
+  a.thumb
+    +thumb
 
 // Two column previews
 @media #{$small}
   div.post_row
     +grid-row($behavior: nest-collapse)
     +grid-column($columns: 12, $center: true, $collapse: true)
-    height: $post_preview_height
   div.post.preview
     +grid-column($columns: 6, $collapse: true)
+    min-height: $post_preview_height
   article.post.preview
     padding-right: $post_preview_padding
 
@@ -66,3 +88,5 @@ article.post.single
 #resume
   nav
     +sub-nav
+  > section
+    +panel

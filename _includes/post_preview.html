@@ -12,15 +12,22 @@
     <section>
     {% case post.type %}
     {% when 'image' %}
-      <a href="{{ post.url }}">{% picture post_preview {{ post.image }} %}</a>
+      <a class="thumb" href="{{ post.url }}">{% picture post_preview {{ post.image }} %}</a>
     {% when 'youtube' %}
       {% youtube {{ post.video }} %}
     {% else %}
-    {% endcase %}
       {{ post.excerpt }}
+    {% endcase %}
+      {{ post.preview }}
     </section>
     <footer>
       <p>posted on {{ post.date | date: "%d %B %Y" }}</p>
+      {% if post.categories %}
+        <ul class="categories">
+        {% for category in post.categories %}
+          <li><a href="/categories/{{ category }}/">{{ category }}</a></li>
+        {% endfor %}
+      {% endif %}
     </footer>
   </article>
 </div>
