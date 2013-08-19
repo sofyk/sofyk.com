@@ -16,8 +16,9 @@
     {% when 'youtube' %}
       {% youtube {{ post.video }} %}
     {% else %}
-    {% endcase %}
       {{ post.excerpt }}
+    {% endcase %}
+      {{ post.preview }}
     </section>
     <footer>
       <p>posted on {{ post.date | date: "%d %B %Y" }}</p>
