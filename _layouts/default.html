@@ -38,32 +38,34 @@ header:
 </head>
 
 <body>
-  <header class="contain-to-grid sticky">
-    <nav class="top-bar">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="/">{{ site.name }}</a></h1>
-        </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
-      <section class="top-bar-section">
-        <ul class="left">
-        {% for item in page.header.nav.left %}
-          <li><a href="{{ item.url }}">{{ item.name }}</a></li>
-        {% endfor %}
+  <div id="wrapper">
+    <header class="head contain-to-grid sticky">
+      <nav class="top-bar">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/">{{ site.name }}</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
-        <ul class="right">
-        {% for item in page.header.nav.right %}
-          <li class="icon"><a href="{{ item.url }}" title="{{ item.name }}"><img src="{{ item.image | asset_path }}" width="24" height="24" alt="{{ item.name }}" />{{ item.name }}</a></li>
-        {% endfor %}
-        </ul>
-      </section>
-    </nav>
-  </header>
+        <section class="top-bar-section">
+          <ul class="left">
+          {% for item in page.header.nav.left %}
+            <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+          {% endfor %}
+          </ul>
+          <ul class="right">
+          {% for item in page.header.nav.right %}
+            <li class="icon"><a href="{{ item.url }}" title="{{ item.name }}"><img src="{{ item.image | asset_path }}" width="24" height="24" alt="{{ item.name }}" />{{ item.name }}</a></li>
+          {% endfor %}
+          </ul>
+        </section>
+      </nav>
+    </header>
 
-  <div id="content">
-    {{ content }}
-    <div id="content_footer"></div>
+    <div id="content">
+      {{ content }}
+    </div>
+    <div id="push"></div>
   </div>
 
   <footer id="colophon">
