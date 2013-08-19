@@ -1,6 +1,7 @@
 name: Sofy Kabachek
 markdown: redcarpet
 pygments: true
+excerpt_separator: <!--more-->
 
 exclude: [ 'CHANGELOG.md', 'LICENSE.txt', 'README.md', 'VERSION', 'Gemfile.lock', 'Gemfile', 'Rakefile' ]
 
