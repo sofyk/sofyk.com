@@ -12,7 +12,7 @@
     <section>
     {% case post.type %}
     {% when 'image' %}
-      <a href="{{ post.url }}">{% picture post_preview {{ post.image }} %}</a>
+      <a class="thumb" href="{{ post.url }}">{% picture post_preview {{ post.image }} %}</a>
     {% when 'youtube' %}
       {% youtube {{ post.video }} %}
     {% else %}
