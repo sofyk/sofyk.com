@@ -60,7 +60,6 @@ section.posts
   +grid-row($behavior: nest-collapse)
 
 article.post.preview
-  height: $post_preview_height
   a.thumb
     +thumb
 
@@ -69,9 +68,9 @@ article.post.preview
   div.post_row
     +grid-row($behavior: nest-collapse)
     +grid-column($columns: 12, $center: true, $collapse: true)
-    height: $post_preview_height
   div.post.preview
     +grid-column($columns: 6, $collapse: true)
+    min-height: $post_preview_height
   article.post.preview
     padding-right: $post_preview_padding
 
