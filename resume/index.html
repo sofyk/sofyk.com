@@ -8,10 +8,19 @@ resume:
 
   - type: entry
     name: Flowserve Corporation
-    start: 06/12/2012
+    start: 2012-06-12
     end: present
     location: 27455 Tierra Alta Way, Temecula, CA 92590
     description: R &amp; D Engineer
+    details:
+      - description: Responsible for drop coalescence research project
+        tasks:
+          - Experiment setup, recording drop coalescence with high speed camera
+          - Collected drop size information at critical time points
+          - Transformed circumference pixel locations to drop radii, using Matlab code
+          - Plotted data verses different fluid properties (Matlab)
+          - Verified correlation with theory through data fitting (Matlab)
+          - Presented results at fluid dynamics conference
 
   - type: section
     id: technical
@@ -32,7 +41,7 @@ resume:
       - [ hebrew, fluent ]
 ---
 
-<section id="resume">
+<article id="resume">
   <h1>{{ page.title }}</h1>
   <nav data-magellan-expedition="fixed">
   <dl>
@@ -68,14 +77,32 @@ resume:
         <div id="{{ resume.id }}" class="magellan-destination" data-magellan-destination="{{ resume.id }}"></div>
         <h2>{{ title }}</h2>
     {% when 'entry' %}
-      <div class="entry">
+      <section class="entry">
         <h3 class="name">{{ resume.name }}</h3>
-        <p class="date">{{ resume.start }}{% unless resume.start == resume.end %}–{{ resume.end }}{% endunless %}</p>
-        <div class="info">
-          <p class="location">{{ resume.location }}</p>
-          {% if resume.description %}<p class="description">{{ resume.description }}</p>{% endif %}
-        </div>
-      </div>
+        <p class="date">{{ resume.start | date: "%m/%d/%Y" }}{% unless resume.start == resume.end %}–{{ resume.end | date: "%m/%d/%Y" }}{% endunless %}</p>
+        {% if resume.info %}
+          <section class="info">
+            <p class="location">{{ resume.location }}</p>
+            {% if resume.description %}<p class="description">{{ resume.description }}</p>{% endif %}
+          </section>
+        {% endif %}
+        {% if resume.details %}
+          <section class="details">
+          {% for detail in resume.details %}
+            {% if detail.description %}
+              <h4>{{ detail.description }}</h4>
+            {% endif %}
+            {% if detail.tasks %}
+              <ul>
+              {% for task in detail.tasks %}
+                <li>{{ task }}</li>
+              {% endfor %}
+              </ul>
+            {% endif %}
+          {% endfor %}
+          </section>
+        {% endif %}
+      </section>
     {% when 'list' %}
       <dl class="list">
       {% for list in resume.lists %}
@@ -94,4 +121,4 @@ resume:
       </dl>
     {% endcase %}
   {% endfor %}
-</section>
+</article>
