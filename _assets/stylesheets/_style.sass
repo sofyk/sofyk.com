@@ -95,3 +95,14 @@ article.post.single
     +sub-nav
   > section
     +panel
+
+  section
+    // give magellan a target above the title
+    position: relative
+    div.magellan-destination
+      visibility: hidden
+      height: 0
+      position: absolute
+      top: (0  - 2 * $topbar-height )
+      @media #{$small}
+        top: (0  - 2 * $topbar-height )
