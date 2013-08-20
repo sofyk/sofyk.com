@@ -18,7 +18,7 @@
     {% else %}
       {{ post.excerpt }}
     {% endcase %}
-      {{ post.preview }}
+      <p>{{ post.preview }}</p>
     </section>
     <footer>
       <p>posted on {{ post.date | date: "%d %B %Y" }}</p>
