@@ -46,49 +46,49 @@ resume:
   <nav data-magellan-expedition="fixed">
   <dl>
     <dt>{{ page.title }}</dt>
-    {% for resume in page.resume %}
-      {% if resume.type == 'section' %}
+    {% for item in page.resume %}
+      {% if item.type == 'section' %}
 
-      {% if resume.name %}
-        {% assign title = resume.name %}
+      {% if item.name %}
+        {% assign title = item.name %}
       {% else %}
-        {% assign title = resume.id %}
+        {% assign title = item.id %}
       {% endif %}
 
-      <dd data-magellan-arrival="{{ resume.id }}"><a href="#{{ resume.id }}">{{ title }}</a></dd>
+      <dd data-magellan-arrival="{{ item.id }}"><a href="#{{ item.id }}">{{ title }}</a></dd>
 
     {% endif %}
   {% endfor %}
   </dl>
   </nav>
 
-  {% for resume in page.resume %}
-    {% case resume.type %}
+  {% for item in page.resume %}
+    {% case item.type %}
     {% when 'section' %}
 
-      {% if resume.name %}
-        {% assign title = resume.name %}
+      {% if item.name %}
+        {% assign title = item.name %}
       {% else %}
-        {% assign title = resume.id %}
+        {% assign title = item.id %}
       {% endif %}
 
       {% unless forloop.first %}</section>{% endunless %}
       <section>
-        <div id="{{ resume.id }}" class="magellan-destination" data-magellan-destination="{{ resume.id }}"></div>
+        <div id="{{ item.id }}" class="magellan-destination" data-magellan-destination="{{ item.id }}"></div>
         <h2>{{ title }}</h2>
     {% when 'entry' %}
       <section class="entry">
-        <h3 class="name">{{ resume.name }}</h3>
-        <p class="date">{{ resume.start | date: "%m/%d/%Y" }}{% unless resume.start == resume.end %}–{{ resume.end | date: "%m/%d/%Y" }}{% endunless %}</p>
-        {% if resume.info %}
+        <h3 class="name">{{ item.name }}</h3>
+        <p class="date">{{ item.start | date: "%m/%d/%Y" }}{% unless item.start == item.end %}–{{ item.end | date: "%m/%d/%Y" }}{% endunless %}</p>
+        {% if item.info %}
           <section class="info">
-            <p class="location">{{ resume.location }}</p>
-            {% if resume.description %}<p class="description">{{ resume.description }}</p>{% endif %}
+            <p class="location">{{ item.location }}</p>
+            {% if item.description %}<p class="description">{{ item.description }}</p>{% endif %}
           </section>
         {% endif %}
-        {% if resume.details %}
+        {% if item.details %}
           <section class="details">
-          {% for detail in resume.details %}
+          {% for detail in item.details %}
             {% if detail.description %}
               <h4>{{ detail.description }}</h4>
             {% endif %}
@@ -105,7 +105,7 @@ resume:
       </section>
     {% when 'list' %}
       <dl class="list">
-      {% for list in resume.lists %}
+      {% for list in item.lists %}
         {% for item in list %}
           {% if forloop.first %}
             <dt class="name">{{ item }}</dt>
