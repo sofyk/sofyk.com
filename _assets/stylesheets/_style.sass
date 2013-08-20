@@ -2,6 +2,10 @@
 // Global styles
 //
 
+@media #{$small}
+  h2
+    font-size: 0.7 * $h2-font-size
+
 div.video.youtube
   +flex-video-container
 
@@ -21,9 +25,10 @@ header.fixed
   height: $topbar-height // needed to keep the sticky top bar correct height
 
 nav.top-bar
-  li.icon img
-    vertical-align: middle
-    margin-right: emCalc(10)
+  a
+    text-transform: capitalize
+  ul.icons li
+    float: left
 
 // Footer
 

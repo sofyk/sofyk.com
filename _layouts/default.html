@@ -17,7 +17,7 @@ header:
         url: https://twitter.com/SofyK_
         image: ico/twitter-bird-light-bgs.svg
       - name: LinkedIn
-        url: https://www.linkedin.com/
+        url: https://www.linkedin.com/pub/sofya-kabachek/22/626/702
         image: ico/LinkedIn-InBug-2CRev.svg
 ---
 
@@ -43,7 +43,7 @@ header:
       <nav class="top-bar">
         <ul class="title-area">
           <li class="name">
-            <h1><a href="/">{{ site.name }}</a></h1>
+            <h1 id="site_name"><a href="/">{{ site.name }}</a></h1>
           </li>
           <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
@@ -53,18 +53,20 @@ header:
             <li><a href="{{ item.url }}">{{ item.name }}</a></li>
           {% endfor %}
           </ul>
-          <ul class="right">
-          {% for item in page.header.nav.right %}
-            <li class="icon"><a href="{{ item.url }}" title="{{ item.name }}"><img src="{{ item.image | asset_path }}" width="24" height="24" alt="{{ item.name }}" />{{ item.name }}</a></li>
-          {% endfor %}
+          <ul class="right icons">
+            {% for item in page.header.nav.right %}
+              <li>
+                <a href="{{ item.url }}" title="{{ item.name }}"><img src="{{ item.image | asset_path }}" width="24" height="24" alt="{{ item.name }}" /></a>
+              </li>
+            {% endfor %}
           </ul>
         </section>
       </nav>
     </header>
 
-    <div id="content">
+    <section id="content">
       {{ content }}
-    </div>
+    </section>
     <div id="push"></div>
   </div>
 
@@ -80,18 +82,18 @@ header:
 
   <script>
     $(document).foundation();
+
+    {% if site.disqus %}
+      {% asset vendor/disqus %}
+    {% endif %}
+
+    {% if site.google_analytics %}
+      {% asset vendor/google_analytics %}
+    {% endif %}
+
+    {% if site.piwik %}
+      {% asset vendor/piwik %}
+    {% endif %}
   </script>
-
-  {% if site.disqus %}
-    {% javascript vendor/disqus %}
-  {% endif %}
-
-  {% if site.google_analytics %}
-    {% javascript vendor/google_analytics %}
-  {% endif %}
-
-  {% if site.piwik %}
-    {% javascript vendor/piwik %}
-  {% endif %}
 </body>
 </html>
