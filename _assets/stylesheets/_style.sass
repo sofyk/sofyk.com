@@ -2,6 +2,12 @@
 // Global styles
 //
 
+html
+  // force vertical scrollbar to prevent page jumps.
+  overflow: scroll
+  overflow-x: hidden
+  overflow-y: scroll
+
 @media #{$small}
   h2
     font-size: 0.7 * $h2-font-size
@@ -34,18 +40,6 @@ nav.top-bar
 
 #colophon
   text-align: center
-  font-size: 0.8em
-
-// Ryan Fait's HTML5 CSS Sticky Footer
-html, body
-  height: 100%
-#wrapper
-  min-height: 100%
-  height: auto !important
-  height: 100%
-  margin: 0 auto emCalc(0 - $footer_height)
-#colophon, #push
-  height: emCalc($footer_height)
 
 // Content
 
@@ -95,3 +89,14 @@ article.post.single
     +sub-nav
   > section
     +panel
+
+  section
+    // give magellan a target above the title
+    position: relative
+    div.magellan-destination
+      visibility: hidden
+      height: 0
+      position: absolute
+      top: (0  - 2 * $topbar-height )
+      @media #{$small}
+        top: (0  - 2 * $topbar-height )

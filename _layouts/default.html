@@ -38,40 +38,37 @@ header:
 </head>
 
 <body>
-  <div id="wrapper">
-    <header class="head contain-to-grid sticky">
-      <nav class="top-bar">
-        <ul class="title-area">
-          <li class="name">
-            <h1 id="site_name"><a href="/">{{ site.name }}</a></h1>
-          </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  <header class="head contain-to-grid sticky">
+    <nav class="top-bar">
+      <ul class="title-area">
+        <li class="name">
+          <h1 id="site_name"><a href="/">{{ site.name }}</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="left">
+        {% for item in page.header.nav.left %}
+          <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+        {% endfor %}
         </ul>
-        <section class="top-bar-section">
-          <ul class="left">
-          {% for item in page.header.nav.left %}
-            <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+        <ul class="right icons">
+          {% for item in page.header.nav.right %}
+            <li>
+              <a href="{{ item.url }}" title="{{ item.name }}"><img src="{{ item.image | asset_path }}" width="24" height="24" alt="{{ item.name }}" /></a>
+            </li>
           {% endfor %}
-          </ul>
-          <ul class="right icons">
-            {% for item in page.header.nav.right %}
-              <li>
-                <a href="{{ item.url }}" title="{{ item.name }}"><img src="{{ item.image | asset_path }}" width="24" height="24" alt="{{ item.name }}" /></a>
-              </li>
-            {% endfor %}
-          </ul>
-        </section>
-      </nav>
-    </header>
+        </ul>
+      </section>
+    </nav>
+  </header>
 
-    <section id="content">
-      {{ content }}
-    </section>
-    <div id="push"></div>
-  </div>
+  <section id="content">
+    {{ content }}
+  </section>
 
   <footer id="colophon">
-    <p>{{ site.name }} © {{ site.time | date: '%Y' }}</p>
+    <p><small>{{ site.name }} © {{ site.time | date: '%Y' }}</small></p>
   </footer>
 
   <script>
