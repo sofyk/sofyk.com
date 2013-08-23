@@ -15,7 +15,9 @@
     {% endif %}
     {% case post.type %}
     {% when 'image' %}
-      <a class="thumb" href="{{ post.url }}">{% picture post_preview {{ post.image }} %}</a>
+      <div class="thumb">
+        <a href="{{ post.url }}">{% picture post_preview {{ post.image }} %}</a>
+      </div>
     {% when 'youtube' %}
       {% youtube {{ post.video }} %}
     {% else %}
