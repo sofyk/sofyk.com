@@ -29,6 +29,10 @@ header.fixed
   height: $topbar-height // needed to keep the sticky top bar correct height
 
 nav.top-bar
+  ul.title-area
+    padding-left: 0.2 * $content_padding
+  ul.right
+    padding-right: 0.4 * $content_padding
   a
     text-transform: capitalize
   ul.icons li
@@ -47,7 +51,7 @@ nav.top-bar
 
 // Content
 
-#content
+.content
   +grid-row
   padding: 0 $content_padding
 
@@ -58,9 +62,6 @@ article.post
       +label($bg: $secondary-color, $radius: 3px)
 
 // Posts previews
-
-section.posts
-  +grid-row($behavior: nest-collapse)
 
 div.post.preview
   padding-bottom: $post_preview_padding
@@ -97,14 +98,14 @@ article.post.preview
     +grid-column($columns: 12, $center: true, $collapse: true)
   div.post.preview
     +grid-column($columns: 6, $collapse: true)
-    padding-right: $post_preview_padding
+    &:first-of-type
+      padding-right: $post_preview_padding
 
 // Single post
 
 article.post.single
-  +grid-column($columns: 12, $center: true)
-  @media #{$small}
-    +grid-column($columns: 10, $center: true)
+  section.post
+    +grid-column($columns: 10)
   section.note
     padding: $note_padding
     @media #{$small}
