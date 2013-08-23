@@ -103,6 +103,10 @@ article.post.single
   +grid-column($columns: 12, $center: true)
   @media #{$small}
     +grid-column($columns: 10, $center: true)
+  section.note
+    padding: $note_padding
+    @media #{$small}
+      padding: 0 ( 2.5 * $note_padding )
   div.highlight
     +panel
 
