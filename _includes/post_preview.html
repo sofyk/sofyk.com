@@ -10,24 +10,33 @@
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     </header>
     <section>
+    {% if post.type == null or post.preview %}
+      <div class="excerpt">
+    {% endif %}
     {% case post.type %}
     {% when 'image' %}
       <a class="thumb" href="{{ post.url }}">{% picture post_preview {{ post.image }} %}</a>
     {% when 'youtube' %}
       {% youtube {{ post.video }} %}
     {% else %}
-      {{ post.excerpt }}
+      <p>{{ post.excerpt }}</p>
     {% endcase %}
+    {% if post.preview %}
       <p>{{ post.preview }}</p>
+    {% endif %}
+    {% if post.type == null or post.preview %}
+      </div>
+    {% endif %}
     </section>
     <footer>
-      <p>posted on {{ post.date | date: "%d %b %Y at %I:%M %p" }}</p>
       {% if post.categories %}
         <ul class="categories">
         {% for category in post.categories %}
           <li><a href="/categories/{{ category }}/">{{ category }}</a></li>
         {% endfor %}
+        </ul>
       {% endif %}
+      <p>{{ post.date | date: "%d %b %Y" }}</p>
     </footer>
   </article>
 </div>

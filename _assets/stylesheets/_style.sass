@@ -19,9 +19,6 @@ div.video.youtube
 code
   font-family: $code_font-family
 
-div.highlight
-  +panel
-
 //
 // Core layout
 //
@@ -65,9 +62,31 @@ article.post
 section.posts
   +grid-row($behavior: nest-collapse)
 
+div.post.preview
+  padding-bottom: $post_preview_padding
+
 article.post.preview
-  a.thumb
-    +thumb
+  background-color: $post_preview_bg
+  border: $post_preview_border
+  div.excerpt
+    +panel
+    div.highlight
+      background-color: inherit
+  h2
+    margin: 0
+    padding: $post_preview_title_padding
+    background-color: $post_preview_title_bg
+  footer
+    margin-top: $paragraph-margin-bottom
+    padding-left: $post_preview_footer_padding
+    overflow: auto
+    ul.categories
+      float: left
+    p
+      float: right
+      padding-right: $post_preview_footer_padding
+      font-size: $post_preview_footer_font-size
+      color: invert($post_preview_bg)
 
 // Two column previews
 @media #{$small}
@@ -76,8 +95,6 @@ article.post.preview
     +grid-column($columns: 12, $center: true, $collapse: true)
   div.post.preview
     +grid-column($columns: 6, $collapse: true)
-    min-height: $post_preview_height
-  div.post.preview
     padding-right: $post_preview_padding
 
 // Single post
@@ -86,6 +103,8 @@ article.post.single
   +grid-column($columns: 12, $center: true)
   @media #{$small}
     +grid-column($columns: 10, $center: true)
+  div.highlight
+    +panel
 
 //
 // Page specific styles
