@@ -7,6 +7,8 @@ A Tale of Arrogance and Murder by Sofy Kabachek
 
 This is a work of fiction, any similarity or likeness to any events or persons living or dead is purely coincidental.
 
+<!--more-->
+
 Daly City, 2 Shoal Dr - 3:00am
 
 A phone ring attempted to pull Janet away from her dreams. She was dissatisfied with that fact, as she was having a delightful dream. Janet M. Rouge was just about to outsmart the pompous, intolerable, and arrogant Alexander Darren Keen, also known as “Ass Holmes” among the local police force. Mr. Keen was about to be humiliated in front of the Chief of Police and whole of San Francisco’s news broadcasts, if not for the second phone ring that finally woke Janet up.

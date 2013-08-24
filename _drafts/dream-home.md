@@ -5,6 +5,8 @@ title: The Dream Home
 
 Finally, the last box of Daniel’s belongings was now sitting comfortably in the middle of his new living room. And even though it was surrounded by many similar boxes, the room still seemed vast and open. Daniel tore off the plastic from his old armchair and plopped in it. It was the most comfortable piece of furniture he ever owned, and in it he was finally able to relax from the tedious move. Daniel hated moving. He spent weeks packing all his things, just so that he can spend more time unpacking. The whole process seemed so redundant to him.
 
+<!--more-->
+
 As he let his eyes wonder lazily about his new home, he noticed a few crumpled pieces of paper stuck in an air vent directly above him. He climbed on his chair and yanked out the papers. He looked them over and gathered that they might have been left by a previous owner. They related the following:
 
 	If you find these writings, my dear reader, then maybe my mind hasn’t wondered quit as far as I feared. But far indeed it wondered, this I know. In vain hopes to root my thoughts in something solid I scribble these accounts of what fate befell me. I can barely remember who I was before that night. I think my name was Loren Shaw.
