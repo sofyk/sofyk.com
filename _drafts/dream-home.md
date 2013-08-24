@@ -3,7 +3,7 @@ layout: post
 title: The Dream Home
 ---
 
-Finally, the last box of Daniel’s belongings was now sitting comfortably in the middle of his new living room. And even though it was surrounded by many similar boxes, the room still seemed vast and open. Daniel tore off the plastic from his old armchair and plopped in it. It was the most comfortable piece of furniture he ever owned, and in it he was finally able to relax from the tedious move. Daniel hated moving. He spent weeks packing all his things, just so that he can spend more time unpacking. The whole process seemed so redundant to him.
+Finally, the last box of Daniel's belongings was now sitting comfortably in the middle of his new living room. And even though it was surrounded by many similar boxes, the room still seemed vast and open. Daniel tore off the plastic from his old armchair and plopped in it. It was the most comfortable piece of furniture he ever owned, and in it he was finally able to relax from the tedious move. Daniel hated moving. He spent weeks packing all his things, just so that he can spend more time unpacking. The whole process seemed so redundant to him.
 
 <!--more-->
 
@@ -11,9 +11,9 @@ Finally, the last box of Daniel’s belongings was now sitting comfortably in th
 
 As he let his eyes wonder lazily about his new home, he noticed a few crumpled pieces of paper stuck in an air vent directly above him. He climbed on his chair and yanked out the papers. He looked them over and gathered that they might have been left by a previous owner. They related the following:
 
-If you find these writings, my dear reader, then maybe my mind hasn’t wondered quit as far as I feared. But far indeed it wondered, this I know. In vain hopes to root my thoughts in something solid I scribble these accounts of what fate befell me. I can barely remember who I was before that night. I think my name was Loren Shaw.
+If you find these writings, my dear reader, then maybe my mind hasn't wondered quit as far as I feared. But far indeed it wondered, this I know. In vain hopes to root my thoughts in something solid I scribble these accounts of what fate befell me. I can barely remember who I was before that night. I think my name was Loren Shaw.
 
-I don’t know how long ago it was, but on the night I moved into my new home everything seemed well. I moved everything I owned across two cities in one day. It took three trips to get all of my things. But I did it. The last box was sitting right there, in the middle on my new living room. And I let my muscles relax deep into the cushions of my couch while scanning my new habitat. I now had a fire place, big windows, air conditioning, granite countertops, new appliances, and so much more. I finally had enough space to get a queen sized bed too. And by
+I don't know how long ago it was, but on the night I moved into my new home everything seemed well. I moved everything I owned across two cities in one day. It took three trips to get all of my things. But I did it. The last box was sitting right there, in the middle on my new living room. And I let my muscles relax deep into the cushions of my couch while scanning my new habitat. I now had a fire place, big windows, air conditioning, granite countertops, new appliances, and so much more. I finally had enough space to get a queen sized bed too. And by
 far the best feature of my new home was the giant walk-in closet in my bedroom. An overall vast improvement over the stuffy little room I was renting in the city.
 
 I hopped into a cold shower. After which, clean and refreshed, I put on sweats and an oversized shirt that still had that soothing softener smell. I made sure that the door was locked, closed the windows, and blasted the AC. Then it was time to test out my new queen sized heavenly cloud. And boy did it do the trick. I was sound asleep in minutes.
