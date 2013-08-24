@@ -58,7 +58,6 @@ nav.top-bar
 
 .content
   +grid-row
-  padding: 0 $content_padding
 
 .center
   +grid-column($columns: 10, $center: true)
@@ -73,10 +72,8 @@ article.post
 
 div.post.preview
   padding-bottom: $post_preview_padding
-
 article.post.preview
   background-color: $post_preview_bg
-  border: $post_preview_border
   h2
     margin: 0
     padding: $post_preview_title_padding
@@ -101,13 +98,17 @@ article.post.preview
 
 // Two column previews
 @media #{$small}
-  div.post_row
-    +grid-row($behavior: nest-collapse)
-    +grid-column($columns: 12, $center: true, $collapse: true)
-  div.post.preview
-    +grid-column($columns: 6, $collapse: true)
-    &:first-of-type
-      padding-right: $post_preview_padding
+  section.posts
+    padding: 0 $post_preview_padding
+    div.post_row
+      +grid-row($behavior: nest-collapse)
+      +grid-column($columns: 12, $center: true, $collapse: true)
+    div.post.preview
+      +grid-column($columns: 6, $collapse: true)
+      &:first-of-type
+        padding-right: $post_preview_padding
+    article.post.preview
+      border: $post_preview_border
 
 // Single post
 
