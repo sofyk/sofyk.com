@@ -2,25 +2,42 @@
 layout: default
 ---
 
-<article class="post single content">
+<article class="post single">
   <header>
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.date | date: "%d %b %Y at %I:%M %p" }}</p>
-    {% if page.categories %}
-      <ul class="categories">
-      {% for category in page.categories %}
-        <li><a href="/categories/{{ category }}/">{{ category }}</a></li>
-      {% endfor %}
-    {% endif %}
+    <div class="title">
+      <div class="content">
+        <div class="center">
+          <h1>{{ page.title }}</h1>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <p class="center">{{ page.date | date: "%d %b %Y at %I:%M %p" }}</p>
+    </div>
   </header>
 
-    {{ content }}
+  <div class="content">
+    <section class="center">
+      {{ content }}
+    </section>
 
-  {% if page.comments and site.disqus %}
-    <section>
+  <footer class="center">
+  {% if page.categories %}
+    <ul class="categories">
+    {% for category in page.categories %}
+      <li><a href="/categories/{{ category }}/">{{ category }}</a></li>
+    {% endfor %}
+  {% endif %}
+  </footer>
+  </div>
+</article>
+
+{% if page.comments and site.disqus %}
+  <aside class="content">
+    <div class="center">
       <div id="disqus_thread"></div>
       <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
       <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </section>
-  {% endif %}
-</article>
+    </div>
+  </aside>
+{% endif %}

@@ -55,6 +55,9 @@ nav.top-bar
   +grid-row
   padding: 0 $content_padding
 
+.center
+  +grid-column($columns: 10, $center: true)
+
 article.post
   ul.categories
     +inline-list
@@ -104,8 +107,12 @@ article.post.preview
 // Single post
 
 article.post.single
-  section.post
-    +grid-column($columns: 10)
+  div.title
+    background-color: $post_title_bg
+    h1
+      margin-top: $header-top-margin
+      color: $post_title_color
+      padding: 0
   section.note
     padding: $note_padding
     @media #{$small}
