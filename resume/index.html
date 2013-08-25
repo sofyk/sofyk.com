@@ -50,7 +50,6 @@ resume:
     details:
       - description: Instructed discussion sessions for upper division fluid dynamics class
 
-
   - type: section
     id: projects
 
@@ -120,26 +119,28 @@ resume:
     name: US Citizen
 ---
 
-<article id="resume">
-  <h1>{{ page.title }}</h1>
-  <nav data-magellan-expedition="fixed">
-  <dl>
-    <dt>{{ page.title }}</dt>
-    {% for item in page.resume %}
-      {% if item.type == 'section' %}
+<article id="resume" class="content">
+  <header>
+    <h1>{{ page.title }}</h1>
+    <nav data-magellan-expedition="fixed">
+    <dl>
+      <dt>{{ page.title }}</dt>
+      {% for item in page.resume %}
+        {% if item.type == 'section' %}
 
-      {% if item.name %}
-        {% assign title = item.name %}
-      {% else %}
-        {% assign title = item.id %}
+        {% if item.name %}
+          {% assign title = item.name %}
+        {% else %}
+          {% assign title = item.id %}
+        {% endif %}
+
+        <dd data-magellan-arrival="{{ item.id }}"><a href="#{{ item.id }}">{{ title }}</a></dd>
+
       {% endif %}
-
-      <dd data-magellan-arrival="{{ item.id }}"><a href="#{{ item.id }}">{{ title }}</a></dd>
-
-    {% endif %}
-  {% endfor %}
-  </dl>
-  </nav>
+    {% endfor %}
+    </dl>
+    </nav>
+  </header>
 
   {% for item in page.resume %}
     {% case item.type %}
@@ -157,24 +158,20 @@ resume:
         <h2>{{ title }}</h2>
     {% when 'entry' %}
       <section class="entry">
-        <h3 class="name">{{ item.name }}</h3>
-        <p class="date">{{ item.start | date: "%m/%d/%Y" }}{% unless item.start == item.end %}–{{ item.end | date: "%m/%d/%Y" }}{% endunless %}</p>
-        {% if item.info %}
-          <section class="info">
-            <p class="location">{{ item.location }}</p>
-            {% if item.description %}<p class="description">{{ item.description }}</p>{% endif %}
-          </section>
-        {% endif %}
+        <h3 class="name">{{ item.name | markdownify | replace: '<p>','' | replace: '</p>','' }}</h3>
+        <p class="date">{{ item.start | date: "%m/%Y" }}{% unless item.start == item.end %} – {{ item.end | date: "%m/%Y" }}{% endunless %}</p>
+        {% if item.location %}<p class="location">{{ item.location | markdownify | replace: '<p>','' | replace: '</p>','' }}</p>{% endif %}
+        {% if item.description %}<p class="description">{{ item.description | markdownify | replace: '<p>','' | replace: '</p>','' }}</p>{% endif %}
         {% if item.details %}
           <section class="details">
           {% for detail in item.details %}
             {% if detail.description %}
-              <h4>{{ detail.description }}</h4>
+              <h4>{{ detail.description | markdownify | replace: '<p>','' | replace: '</p>','' }}</h4>
             {% endif %}
             {% if detail.tasks %}
               <ul>
               {% for task in detail.tasks %}
-                <li>{{ task }}</li>
+                <li>{{ task | markdownify | replace: '<p>','' | replace: '</p>','' }}</li>
               {% endfor %}
               </ul>
             {% endif %}
