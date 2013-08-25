@@ -15,9 +15,9 @@ assets:
 # disqus: shortname
 
 # Uncomment below and add your Tracking ID and URL to enable Google Analytics.
-# google_analytics:
-#   id: UA-00000000-0
-#   url: example.com
+google_analytics:
+  id: UA-16103694-3
+  url: sofyk.com
 
 # Uncomment below and add your Piwik URL to enable Piwik.
 # piwik: example.com/piwik/
