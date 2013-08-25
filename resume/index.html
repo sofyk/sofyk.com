@@ -50,7 +50,7 @@ title: Resume
           <section class="details">
           {% for detail in item.details %}
             {% if detail.description %}
-              <h4>{{ detail.description | markdownify | replace: '<p>','' | replace: '</p>','' }}</h4>
+              <p>{{ detail.description | markdownify | replace: '<p>','' | replace: '</p>','' }}</p>
             {% endif %}
             {% if detail.tasks %}
               <ul>

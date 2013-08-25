@@ -137,10 +137,6 @@ article.post.single
     background-color: $body-bg
   > section
     +panel
-
-  section.details p
-    margin-bottom: emCalc(5)
-  section
     // give magellan a target above the title
     position: relative
     div.magellan-destination
@@ -150,3 +146,52 @@ article.post.single
       top: (0  - 2 * $topbar-height )
       @media #{$small}
         top: (0  - 2 * $topbar-height )
+  h2
+    font-size: 1.2 * $h2-font-size
+    &:first-letter
+      text-transform: uppercase
+  section.entry
+    margin-top: $resume_entry_margin
+    &:first-of-type
+      margin-top: 0
+    h3
+      margin-bottom: 0
+    p
+      margin-bottom: 0
+    p.date, p.location
+      font-style: italic
+    p.description
+      font-size: 0.7 * $h3-font-size
+      font-weight: bold
+    section.details ul
+      margin-bottom: 0
+  dl.list
+    +horizontal-list-container
+    dt.name
+      clear: both
+    div.info
+      dd
+        +horizontal-list-item
+        &:before
+          content: "· "
+        &:first-child:before
+          content: ""
+
+  @media #{$small}
+    > section
+      overflow: auto
+    section.entry
+      padding-left: $resume_left_padding
+    p.date
+      float: left
+    p.location
+      float: right
+    p.description
+      clear: both
+    dl.list
+      +grid-row
+      .name
+        +grid-column($columns: 4, $collapse: true)
+        padding-left: $resume_left_padding
+      .info
+        +grid-column($columns: 8, $collapse: true)
