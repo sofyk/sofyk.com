@@ -1,0 +1,19 @@
+---
+layout: post
+title: Conference Front Line Training
+categories:
+ - comics
+
+type: image
+image: training.jpg
+preview: |
+  As volunteers at the American Physical Society (APS) Division of Fluid Dynamics (DFD) 63rd Annual Meeting, our job is simple. Defend the line. Defend the laser pointer.
+---
+
+{% picture {{ page.image }} %}
+
+{{ page.preview }}
+
+The [63rd Annual APS DFD Meeting](http://www.dfd2010.caltech.edu/) is being held in long beach for the next few days, and I got to volunteer for it.
+
+A day before the conference started volunteers were instructed to arrive at the convention center for an important training event. The purpose of this training was to teach us how to use laser pointers, and walkie talkies. The prospect was much more exciting then one might think.
