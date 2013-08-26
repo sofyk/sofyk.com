@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Grad School Rush
+categories:
+ - comics
 
 type: image
 image: grad_school_rush.jpg

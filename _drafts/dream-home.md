@@ -1,6 +1,9 @@
 ---
 layout: post
 title: The Dream Home
+categories:
+ - stories
+ - horror
 ---
 
 Finally, the last box of Daniel's belongings was now sitting comfortably in the middle of his new living room. And even though it was surrounded by many similar boxes, the room still seemed vast and open. Daniel tore off the plastic from his old armchair and plopped in it. It was the most comfortable piece of furniture he ever owned, and in it he was finally able to relax from the tedious move. Daniel hated moving. He spent weeks packing all his things, just so that he can spend more time unpacking. The whole process seemed so redundant to him.

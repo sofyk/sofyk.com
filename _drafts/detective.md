@@ -1,6 +1,9 @@
 ---
 layout: post
 title: A Tale of Arrogance and Murder
+categories:
+ - stories
+ - mystery
 ---
 
 A Tale of Arrogance and Murder by Sofy Kabachek

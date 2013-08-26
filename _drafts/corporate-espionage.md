@@ -2,7 +2,7 @@
 layout: post
 title: Corporate Espionage
 categories:
- - games
+ - comics
 
 type: image
 image: corporate_espionage.jpg

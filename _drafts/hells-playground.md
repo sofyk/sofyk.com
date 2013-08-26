@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Hell's Playground
+categories:
+ - stories
+ - mystery
 ---
 
 Since she could remember herself, her father prepared her for moments like this. Don't talk to strangers. Don't open the door to strangers. Now, there were two shadows reflecting on the living room window.
