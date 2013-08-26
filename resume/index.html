@@ -1,6 +1,13 @@
 ---
 layout: default
 title: Resume
+contact:
+  name: Sofy Kabachek
+  methods:
+    - type: phone
+      value: 424.652.8584
+    - type: email
+      value: sofy.k87@gmail.com
 
 resume:
 
@@ -15,7 +22,7 @@ resume:
     start: 2012-06-01
     end: present
     location: 27455 Tierra Alta Way, Temecula, CA 92590
-    description: R & D Engineer
+    description: R&D Engineer
     details:
       - description: Responsible for full process development of surface measurement
         tasks:
@@ -122,6 +129,15 @@ resume:
 <article id="resume" class="content">
   <header>
     <h1>{{ page.title }}</h1>
+    <section class="contact">
+      <h2>{{ page.contact.name }}</h2>
+      <dl>
+      {% for method in page.contact.methods %}
+        <dt>{{ method.type }}</dt>
+        <dd>{{ method.value }}</dd>
+      {% endfor %}
+      </dl>
+    </section>
     <nav data-magellan-expedition="fixed">
     <dl>
       <dt>{{ page.title }}</dt>
@@ -166,7 +182,7 @@ resume:
           <section class="details">
           {% for detail in item.details %}
             {% if detail.description %}
-              <h4>{{ detail.description | markdownify | replace: '<p>','' | replace: '</p>','' }}</h4>
+              <p>{{ detail.description | markdownify | replace: '<p>','' | replace: '</p>','' }}</p>
             {% endif %}
             {% if detail.tasks %}
               <ul>

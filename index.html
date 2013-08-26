@@ -3,8 +3,7 @@ layout: default
 title: home
 ---
 
-<h1>{{ page.title }}</h1>
-<section class="posts">
+<section class="posts content">
 {% for post in site.posts %}
   {% include post_preview.html post=post %}
 {% endfor %}

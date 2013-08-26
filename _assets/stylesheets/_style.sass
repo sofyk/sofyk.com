@@ -3,6 +3,7 @@
 //
 
 html
+  background-color: $body-bg
   // force vertical scrollbar to prevent page jumps.
   overflow: scroll
   overflow-x: hidden
@@ -18,9 +19,6 @@ div.video.youtube
 code
   font-family: $code_font-family
 
-div.highlight
-  +panel
-
 //
 // Core layout
 //
@@ -31,10 +29,25 @@ header.fixed
   height: $topbar-height // needed to keep the sticky top bar correct height
 
 nav.top-bar
+  ul.title-area
+    padding-left: 0.2 * $content_padding
+  ul.right
+    padding-right: 0.4 * $content_padding
   a
     text-transform: capitalize
+    &:hover
+      color: $topbar-link-color-hover
   ul.icons li
     float: left
+    font-size: $header_icon_size
+    a
+      color: $header_icon_color
+
+#site_name
+  font-family: $site_name_font
+  white-space: nowrap
+  a
+    color: $site_name_color
 
 // Footer
 
@@ -43,9 +56,11 @@ nav.top-bar
 
 // Content
 
-#content
+.content
   +grid-row
-  padding: 0 $content_padding
+
+.center
+  +grid-column($columns: 10, $center: true)
 
 article.post
   ul.categories
@@ -55,42 +70,81 @@ article.post
 
 // Posts previews
 
-section.posts
-  +grid-row($behavior: nest-collapse)
-
+div.post.preview
+  padding-bottom: $post_preview_padding
 article.post.preview
-  a.thumb
-    +thumb
+  background-color: $post_preview_bg
+  h2
+    font-size: 0.6 * $h2-font-size
+    margin: 0
+    padding: $post_preview_title_padding
+    background-color: $post_preview_title_bg
+  div.thumb
+    text-align: center
+  div.excerpt
+    +panel
+    div.highlight
+      background-color: inherit
+  footer
+    margin-top: $paragraph-margin-bottom
+    padding-left: $post_preview_footer_padding
+    overflow: auto
+    ul.categories
+      float: left
+    p
+      float: right
+      padding-right: $post_preview_footer_padding
+      font-size: $post_preview_footer_font-size
+      color: invert($post_preview_bg)
 
 // Two column previews
 @media #{$small}
-  div.post_row
-    +grid-row($behavior: nest-collapse)
-    +grid-column($columns: 12, $center: true, $collapse: true)
-  div.post.preview
-    +grid-column($columns: 6, $collapse: true)
-    min-height: $post_preview_height
-  article.post.preview
-    padding-right: $post_preview_padding
+  section.posts
+    padding: 0 $post_preview_padding
+    div.post_row
+      +grid-row($behavior: nest-collapse)
+      +grid-column($columns: 12, $center: true, $collapse: true)
+    div.post.preview
+      +grid-column($columns: 6, $collapse: true)
+      &:first-of-type
+        padding-right: $post_preview_padding
+    article.post.preview
+      border: $post_preview_border
 
 // Single post
 
 article.post.single
-  +grid-column($columns: 12, $center: true)
-  @media #{$small}
-    +grid-column($columns: 10, $center: true)
+  div.title
+    background-color: $post_title_bg
+    h1
+      margin-top: $header-top-margin
+      color: $post_title_color
+      padding: 0
+  section.note
+    padding: $note_padding
+    @media #{$small}
+      padding: 0 ( 2.5 * $note_padding )
+  div.highlight
+    +panel
 
 //
 // Page specific styles
 //
 
 #resume
+  section.contact
+    +panel
+    dl
+      padding-left: $resume_left_padding
+      dt
+        clear: left
+        float: left
+        width: emCalc(100)
   nav
     +sub-nav
+    background-color: $body-bg
   > section
     +panel
-
-  section
     // give magellan a target above the title
     position: relative
     div.magellan-destination
@@ -100,3 +154,52 @@ article.post.single
       top: (0  - 2 * $topbar-height )
       @media #{$small}
         top: (0  - 2 * $topbar-height )
+  h2
+    font-size: 1.2 * $h2-font-size
+    &:first-letter
+      text-transform: uppercase
+  section.entry
+    margin-top: $resume_entry_margin
+    &:first-of-type
+      margin-top: 0
+    h3
+      margin-bottom: 0
+    p
+      margin-bottom: 0
+    p.date, p.location
+      font-style: italic
+    p.description
+      font-size: 0.7 * $h3-font-size
+      font-weight: bold
+    section.details ul
+      margin-bottom: 0
+  dl.list
+    +horizontal-list-container
+    dt.name
+      clear: both
+    div.info
+      dd
+        +horizontal-list-item
+        &:before
+          content: "· "
+        &:first-child:before
+          content: ""
+
+  @media #{$small}
+    > section
+      overflow: auto
+    section.entry
+      padding-left: $resume_left_padding
+    p.date
+      float: left
+    p.location
+      float: right
+    p.description
+      clear: both
+    dl.list
+      +grid-row
+      .name
+        +grid-column($columns: 4, $collapse: true)
+        padding-left: $resume_left_padding
+      .info
+        +grid-column($columns: 8, $collapse: true)

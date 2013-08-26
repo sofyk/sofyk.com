@@ -2,8 +2,6 @@
 header:
   nav:
     left:
-      - name: home
-        url: /
       - name: contact
         url: /resume/
       - name: résumé
@@ -15,10 +13,10 @@ header:
     right:
       - name: '@SofyK_'
         url: https://twitter.com/SofyK_
-        image: ico/twitter-bird-light-bgs.svg
+        icon: twitter
       - name: LinkedIn
         url: https://www.linkedin.com/pub/sofya-kabachek/22/626/702
-        image: ico/LinkedIn-InBug-2CRev.svg
+        icon: linkedin
 ---
 
 <!DOCTYPE html>
@@ -55,7 +53,7 @@ header:
         <ul class="right icons">
           {% for item in page.header.nav.right %}
             <li>
-              <a href="{{ item.url }}" title="{{ item.name }}"><img src="{{ item.image | asset_path }}" width="24" height="24" alt="{{ item.name }}" /></a>
+              <a href="{{ item.url }}" title="{{ item.name }}" class="foundicon-{{ item.icon }}"></a>
             </li>
           {% endfor %}
         </ul>
@@ -63,9 +61,7 @@ header:
     </nav>
   </header>
 
-  <section id="content">
-    {{ content }}
-  </section>
+  {{ content }}
 
   <footer id="colophon">
     <p><small>{{ site.name }} © {{ site.time | date: '%Y' }}</small></p>
