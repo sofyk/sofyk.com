@@ -6,8 +6,6 @@ categories:
  - mystery
 ---
 
-A Tale of Arrogance and Murder by Sofy Kabachek
-
 This is a work of fiction, any similarity or likeness to any events or persons living or dead is purely coincidental.
 
 Daly City, 2 Shoal Dr - 3:00am
