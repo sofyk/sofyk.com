@@ -8,13 +8,13 @@ categories:
 
 Since she could remember herself, her father prepared her for moments like this. Don't talk to strangers. Don't open the door to strangers. Now, there were two shadows reflecting on the living room window.
 
-<!--more-->
-
 “Where's the money, Jack?” the larger shadow demanded. After a moment of silence, she heard the window break, as a man's body flew through it crashing into her home. The man grunted. She heard glass shuttering under the boots of the large stranger entering her home. If a stranger opens the door forcefully, get under the bed and stay quite until the danger is gone. The monster hunted darkness under her bed seemed comforting, now that the stranger came.
 
 “I don't owe you nothing, you little piece of shi - Ah!” she heard the stranger's foot run into the man's guts.
 
 “Wrong answer.”
+
+<!--more-->
 
 If you get scared, cover your ears, close your eyes and play a nice tone in your mind. She could feel her heart beat fast as a drummer bunny. She wasn't scared, she just didn't want him to die.
 
