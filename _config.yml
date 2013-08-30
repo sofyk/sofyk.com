@@ -1,4 +1,5 @@
 name: Sofy Kabachek
+domain: http://sofyk.com
 markdown: redcarpet
 pygments: true
 permalink: /:month-:day-:year/:title/
@@ -10,6 +11,19 @@ assets:
   compress:
     css: sass
     js: uglifier
+
+# Keywords will be merged with categories, tags, and page keywords.
+keywords: [ blog, personal ]
+
+# Uncomment below to set default meta info.
+# meta:
+#   locale: en_US
+#   title:
+#     prefix: ""
+#     suffix: " - Site Name"
+#   twitter:
+#     site: "@example.com"
+#     creator: "@username"
 
 # Uncomment below and add your Disqus Shortname to enable Disqus.
 # disqus: shortname
@@ -24,7 +38,7 @@ google_analytics:
 
 # Uncomment below to enable deploy.
 :deploy:
-  # either :rsync or :sftp
+  # only :rsync supported
   :protocol: :rsync
   # domain name
   :server: ssh.sofyk.com
@@ -41,7 +55,7 @@ google_analytics:
 # Uncomment below to enable responsive images.
 picture:
   markup: 'interchange'
-  source: pictures/_fullsize
+  source: pictures/fullsize
   output: pictures
   presets:
     default:
@@ -57,16 +71,4 @@ picture:
         width: '768'
       source_default:
         width: '500'
-    post_preview:
-      ppi: [ 1, 1.5, 2 ]
-      source_large:
-        media: '(large)'
-        width: '1440'
-      source_medium:
-        media: '(medium)'
-        width: '1280'
-      source_small:
-        media: '(small)'
-        width: '768'
-      source_default:
-        width: '500'
+
