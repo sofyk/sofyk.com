@@ -5,11 +5,11 @@ categories:
  - comics
 
 type: image
-image: technichal_dificulties.jpg
+picture: technichal_dificulties.jpg
 preview: |
   Technology, it doesn't always do what it is asked...
 ---
 
-{% picture {{ page.image }} %}
+{% picture {{ page.picture }} %}
 
 {{ page.preview }}
