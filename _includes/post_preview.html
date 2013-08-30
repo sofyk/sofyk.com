@@ -14,10 +14,10 @@
     {% case post.type %}
     {% when 'image' %}
       <div class="thumb">
-        <a href="{{ post.url }}">{% picture post_preview {{ post.image }} %}</a>
+        <a href="{{ post.url }}">{% picture post_preview {{ post.picture }} %}</a>
       </div>
     {% when 'youtube' %}
-      {% youtube {{ post.video }} %}
+      {% youtube {{ post.youtube }} %}
     {% else %}
       {% assign excerpt = post.excerpt %}
     {% endcase %}
