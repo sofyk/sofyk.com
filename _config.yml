@@ -16,14 +16,13 @@ assets:
 keywords: [ blog, personal ]
 
 # Uncomment below to set default meta info.
-# meta:
-#   locale: en_US
-#   title:
-#     prefix: ""
-#     suffix: " - Site Name"
-#   twitter:
-#     site: "@example.com"
-#     creator: "@username"
+meta:
+  locale: en_US
+  title:
+    prefix: ""
+    suffix: " - Sofy Kabachek"
+  twitter:
+    creator: "@SofyK_"
 
 # Uncomment below and add your Disqus Shortname to enable Disqus.
 # disqus: shortname
