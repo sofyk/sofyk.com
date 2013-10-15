@@ -50,8 +50,8 @@ google_analytics:
   :path: sofyk.com/htdocs/
 #   # site files and folders that should be uploaded but not synced
 #   # remote content will not be removed from these files and folders
-#   :upload_only:
-#     - content/
+  :upload_only:
+    - survival-island/
 
 # Foundation Interchange markup support added to
 # Jekyll Picture Tag (https://github.com/robwierzbowski/jekyll-picture-tag)
