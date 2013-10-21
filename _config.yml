@@ -51,7 +51,7 @@ google_analytics:
   # site files and folders that should be uploaded but not synced
   # remote content will not be removed from these files and folders
   :upload_only:
-    - survival-island/
+    - survival-island/Survival Island Web.unity3d
 
 # Foundation Interchange markup support added to
 # Jekyll Picture Tag (https://github.com/robwierzbowski/jekyll-picture-tag)
