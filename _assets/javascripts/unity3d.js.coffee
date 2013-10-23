@@ -16,7 +16,7 @@ window.unity3dLoader = (config, file) ->
           brokenScreen.find('a').click( (e) ->
             e.stopPropagation()
             e.preventDefault()
-            e.installPlugin()
+            u.installPlugin()
             return false
           )
           brokenScreen.show()
@@ -24,7 +24,7 @@ window.unity3dLoader = (config, file) ->
           missingScreen.find('a').click( (e) ->
             e.stopPropagation()
             e.preventDefault()
-            e.installPlugin()
+            u.installPlugin()
             return false
           )
           missingScreen.show()
