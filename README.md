@@ -7,6 +7,7 @@ Just clone and blog: create the `_posts` and `_drafts` folder.
 - Bare bones [Jekyll](http://jekyllrb.com/) blog: HTML5 & CSS3 ready.
 - Running [Foundation by ZURB](http://foundation.zurb.com/).
 - Asset pipeline with [Jekyll::AssetsPlugin](https://github.com/ixti/jekyll-assets).
+- Bower for asset dependency management.
 - Plugins for easy responsive images and YouTube videos.
 - [Compass](http://compass-style.org/), [Sass](http://sass-lang.com/), [CoffeeScript](http://coffeescript.org/).
 - Basic [Rake](https://github.com/jimweirich/rake) tasks with support for dev and testing modes, run `rake -D` for info.
@@ -19,9 +20,9 @@ Just clone and blog: create the `_posts` and `_drafts` folder.
 
 Just clone this with
 
-    git clone git@github.com:razor-x/jekyll-and-zurb.git my_blog
+    git clone https://github.com/razor-x/jekyll-and-zurb.git my_blog
 
-run `bundle`, and create the `_posts` folder.
+run `bundle && bower install` and create the `_posts` folder.
 Head over to the [Jekyll Docs](http://jekyllrb.com/docs/home/) for the rest of the details.
 
 ## Add future update support
@@ -46,8 +47,9 @@ which you can then merge into your other branches.
 The `Gemfile` is using pessimistic version constraints for everything,
 so if you want major updates, you need to bump the versions yourself.
 
-If you update Foundation, but sure to also update the JavaScript in `_assets/javascripts/vendor/`.
-Note that `custom.modernizr.js` has been renamed `custom_modernizr.js` for this project.
+JavaScript library versions need to be updated in `bower.json` and `_config.yml`.
+
+If you update Foundation, but sure to update the version numbers in `Gemfile` and `bower.json`.
 
 ## License
 
