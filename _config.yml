@@ -6,7 +6,16 @@ pygments: true
 permalink: /:month-:day-:year/:title/
 excerpt_separator: <!--more-->
 
-exclude: [ 'CHANGELOG.md', 'LICENSE.txt', 'README.md', 'VERSION', 'Gemfile.lock', 'Gemfile', 'Rakefile', bower_components ]
+exclude:
+  - CHANGELOG.md
+  - LICENSE.txt
+  - README.md
+  - VERSION
+  - Gemfile.lock
+  - Gemfile
+  - Rakefile
+  - bower.json
+  - bower_components
 
 # Jekyll::AssetsPlugin options.
 assets:
