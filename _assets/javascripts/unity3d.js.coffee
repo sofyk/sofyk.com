@@ -41,4 +41,4 @@ window.unity3dLoader = (config, file) ->
     complete: () -> load()
   }])
 
-loadUnity3dLoader()
+if typeof(loadUnity3dLoader) == 'function' then loadUnity3dLoader()
