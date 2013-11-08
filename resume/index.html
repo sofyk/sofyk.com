@@ -1,23 +1,15 @@
 ---
 layout: default
 title: Resume
-contact:
-  name: Sofy Kabachek
-  methods:
-    - type: phone
-      value: 424.652.8584
-    - type: email
-      value: sofy.k87@gmail.com
-
 ---
 
 <article id="resume" class="content">
   <header>
     <h1>{{ page.title }}</h1>
     <section class="contact">
-      <h2>{{ page.contact.name }}</h2>
+      <h2>{{ site.data.profile.name }}</h2>
       <dl>
-      {% for method in page.contact.methods %}
+      {% for method in site.data.profile.contact %}
         <dt>{{ method.type }}</dt>
         <dd>{{ method.value }}</dd>
       {% endfor %}
@@ -26,7 +18,7 @@ contact:
     <nav data-magellan-expedition="fixed">
     <dl>
       <dt>{{ page.title }}</dt>
-      {% for item in page.resume %}
+      {% for item in site.data.resume %}
         {% if item.type == 'section' %}
 
         {% if item.name %}
@@ -43,7 +35,7 @@ contact:
     </nav>
   </header>
 
-  {% for item in page.resume %}
+  {% for item in site.data.resume %}
     {% case item.type %}
     {% when 'section' %}
 
