@@ -130,7 +130,7 @@ header:
   {% endif %}
 
   {% if page.unity3d %}
-    unity3dLoader({ {% for config in page.unity3d.config %}{{ config[0] }}:{{ config[1] }}{% unless forloop.last %},{% endunless %}{% endfor %} },"{{ page.unity3d.file }}")
+    function loadUnity3dLoader() { unity3dLoader({ {% for config in page.unity3d.config %}{{ config[0] }}:{{ config[1] }}{% unless forloop.last %},{% endunless %}{% endfor %} },"{{ page.unity3d.file }}") }
   {% endif %}
   </script>
 </body>
