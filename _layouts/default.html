@@ -91,6 +91,7 @@ header:
   <div id="fb-root"></div>
 {% endif %}
 
+{% capture site_javascript %}
   <script>
     Modernizr.load([
     {% for lib in site.cdn.libs %}
@@ -133,5 +134,7 @@ header:
     function loadUnity3dLoader() { unity3dLoader({ {% for config in page.unity3d.config %}{{ config[0] }}:{{ config[1] }}{% unless forloop.last %},{% endunless %}{% endfor %} },"{{ page.unity3d.file }}") }
   {% endif %}
   </script>
+{% endcapture %}
+{{ site_javascript | strip_newlines }}
 </body>
 </html>

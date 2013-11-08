@@ -1,0 +1,113 @@
+- type: objective
+  objective: M.S. Software Engineer seeking to take part in a dynamic development team.
+
+- type: section
+  id: experience
+
+- type: entry
+  name: Flowserve Corporation
+  start: 2012-06-01
+  end: present
+  location: 27455 Tierra Alta Way, Temecula, CA 92590
+  description: R&D Engineer
+  details:
+    - description: Responsible for full process development of surface measurement
+      tasks:
+        - Implemented automated motion control for newly procured Taylor Hobson (TH) surface measurement machine (Ultra)
+        - "Designed, developed, and implemented prototype analysis algorithms for TH exported data (Python), including: data display, Gaussian filtering, smart overall tilt exclusion, surface feature analysis, and more"
+        - Translated algorithm to labview adding UI/UX designed to closely mimic past process and nomenclature while eliminating redundant steps
+        - Created instruction manuals for new surface measurement process
+        - Implemented additional features and modified UI based on user feedback (labview)
+    - description: Designed mechanical seal components and assembly (autocad)
+
+- type: entry
+  name: University of California, Los Angeles - CFIP
+  start: 2010-09-01
+  end: 2012-06-01
+  location: Engineering IV, UCLA, Los Angeles, CA 90095
+  description: Graduate Researcher
+  details:
+    - description: Responsible for drop coalescence research project
+      tasks:
+        - "Experiment setup: recording phenomenon with high speed camera"
+        - Collected drop size information at critical time points
+        - Transformed circumference pixel locations to drop radii (Matlab)
+        - Plotted results and verified correlation with theory (Matlab)
+        - Presented findings at [APS Division of Fluid Dynamics meeting](http://meetings.aps.org/link/BAPS.2011.DFD.S5.3)
+
+- type: entry
+  name: University of California, Los Angeles
+  start: 2011-01-01
+  end: 2012-06-01
+  location: Engineering IV, UCLA, Los Angeles, CA 90095
+  description: Teaching Assistant
+  details:
+    - description: Instructed discussion sessions for upper division fluid dynamics class
+
+- type: section
+  id: projects
+
+- type: entry
+  name: Mechanical Engineering Capstone Design Project
+  start: 2009-09-01
+  end: 2010-06-01
+  location: University of California, Santa Barbara
+  description: Group Leader
+  details:
+    - description: Designed, developed, and implemented a proof of concept for an irradiation test capsule
+      tasks:
+        - Controlled specimen temperature in the presence of a dynamic heat source using thin gap with varying gas mixture
+        - Designed capsule components and assembly (solidworks)
+        - Manufactured capsule components
+        - Translated general customer requirement into specific tasks utilizing the strengths and interests of each member
+        - Presented results in Capstone Design poster competition
+
+- type: section
+  id: education
+
+- type: entry
+  name: University of California, Los Angeles
+  start: 2010-09-01
+  end: 2012-06-01
+  location: University of California, Los Angeles
+  description: Masters of Science
+  details:
+    - description: Mechanical Engineering (Fluid Dynamics)
+
+- type: entry
+  name: University of California, Santa Barbara
+  start: 2006-09-01
+  end: 2010-06-01
+  location: University of California, Santa Barbara
+  description: Bachelor of Science
+  details:
+    - description: Mechanical Engineering B.S. & Physics Minor
+
+- type: entry
+  name: HaGymnasia HaRealit
+  start: 2001-09-01
+  end: 2004-11-01
+  location: Rishon Lezion, Israel
+
+- type: section
+  id: technical
+  name: technical skills
+
+- type: list
+  lists:
+    - [ languages, C, C#, Python, JavaScript ]
+    - [ tools, Visual Studio, LabVIEW, MATLAB, Mathematica ]
+    - [ design software, Unreal Dev. Kit, Unity, AutoCAD, SolidWorks ]
+    - [ skills, Linear Algebra, Numerical Methods, Object Oriented Programing ]
+    - [ spoken languages, English, Hebrew, Russian]
+
+- type: section
+  id: awards
+
+- type: list
+  lists:
+    - [ Dean’s Honors, Fall 2008, Winter 2009, Winter 2010 ]
+
+- type: section
+  id: awards
+  name: US Citizen
