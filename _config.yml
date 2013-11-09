@@ -6,6 +6,9 @@ pygments: true
 permalink: /:month-:day-:year/:title/
 excerpt_separator: <!--more-->
 
+# Uncomment below to enable pagination.
+# paginate: 5
+
 exclude:
   - CHANGELOG.md
   - LICENSE.txt
