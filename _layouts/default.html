@@ -91,6 +91,8 @@ header:
 
 {% capture site_javascript %}
   <script>
+    {% asset console-polyfill %}
+
     Modernizr.load([
     {% for lib in site.cdn.libs %}
       {
