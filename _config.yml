@@ -44,10 +44,13 @@ keywords: [ blog, personal ]
 # Uncomment below to set default meta info.
 meta:
   locale: en_US
+#   description: "My Site's default description."
   title:
     prefix: ""
     suffix: " - Sofy Kabachek"
   twitter:
+    default_card: summary
+    site: "@SofyK_"
     creator: "@SofyK_"
     site: "@SofyK_"
 
