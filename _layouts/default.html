@@ -13,10 +13,10 @@ header:
     right:
       - name: '@SofyK_'
         url: https://twitter.com/SofyK_
-        icon: twitter
+        icon: fi-social-twitter
       - name: LinkedIn
         url: https://www.linkedin.com/pub/sofya-kabachek/22/626/702
-        icon: linkedin
+        icon: fi-social-linkedin
 ---
 
 <!DOCTYPE html>
@@ -51,7 +51,7 @@ header:
         <ul class="right icons">
           {% for item in page.header.nav.right %}
             <li>
-              <a href="{{ item.url }}" title="{{ item.name }}" class="foundicon-{{ item.icon }}"></a>
+              <a href="{{ item.url }}" title="{{ item.name }}" class="{{ item.icon }}"></a>
             </li>
           {% endfor %}
         </ul>
