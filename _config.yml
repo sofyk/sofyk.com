@@ -1,6 +1,6 @@
 # Jekyll options.
 name: Sofy Kabachek
-domain: http://sofyk.com
+domain: http://sofyk.github.io/sofyk.com
 markdown: redcarpet
 pygments: true
 permalink: /:month-:day-:year/:title/
@@ -28,6 +28,7 @@ gems:
 
 # Jekyll::AssetsPlugin options.
 assets:
+  baseurl: http://sofyk.github.io/sofyk.com/assets/
   sources:
     - _assets/images
     - _assets/javascripts
@@ -71,18 +72,18 @@ google_analytics:
 # piwik: example.com/piwik/
 
 # Uncomment below to enable deploy.
-:deploy:
-  # only :rsync supported
-  :protocol: :rsync
-  # domain name
-  :server: ssh.sofyk.com
-  # remote username
-  :user: sofyk
-  # remote port
-  :port: 22
-  # path to remote folder where contents of _site should go
-  # must have trailing slash
-  :path: sofyk.com/htdocs/
+# :deploy:
+#   # only :rsync supported
+#   :protocol: :rsync
+#   # domain name
+#   :server: example.com
+#   # remote username
+#   :user: www
+#   # remote port
+#   :port: 22
+#   # path to remote folder where contents of _site should go
+#   # must have trailing slash
+#   :path: /var/www/example.com/htdocs/
 #   # site files and folders that should be uploaded but not synced
 #   # remote content will not be removed from these files and folders
 #   :upload_only:
@@ -134,3 +135,11 @@ social:
       parsetags: onload
   twitter:
     enabled: true
+
+# Include code from other repos in the final build.
+# Each array has the format
+# - [ repo, branch, subdirectory, treeish (optional) ]
+# Uncomment this example to includes a copy of the gh-pages branch of this repo at
+# http://razor-x.github.io/jekyll-and-zurb/inception/jekyll-and-zurb/
+# :sub_content:
+#   - [ "https://github.com/razor-x/jekyll-and-zurb", gh-pages, inception/jekyll-and-zurb ]
