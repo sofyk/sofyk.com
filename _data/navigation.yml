@@ -1,0 +1,19 @@
+header:
+  left:
+    - name: contact
+      url: /resume/
+    - name: résumé
+      url: /resume/
+    - name: videos
+      url: /categories/videos/
+    - name: games
+      url: /categories/games/
+    - name: comics
+      url: /categories/comics/
+  right:
+    - name: '@SofyK_'
+      url: https://twitter.com/SofyK_
+      icon: fi-social-twitter
+    - name: LinkedIn
+      url: https://www.linkedin.com/pub/sofya-kabachek/22/626/702
+      icon: fi-social-linkedin

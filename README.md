@@ -11,7 +11,8 @@ Just clone and blog: create the `_posts` and `_drafts` folder.
 - Plugins for easy responsive images and YouTube videos.
 - [Compass](http://compass-style.org/), [Sass](http://sass-lang.com/), [CoffeeScript](http://coffeescript.org/).
 - Basic [Rake](https://github.com/jimweirich/rake) tasks with support for dev and testing modes, run `rake -D` for info.
-- Meta data system for SEO.
+- Social media buttons (optional).
+- Meta data system for SEO and social media support.
 - Optional pagination using Foundation.
 - [Disqus](https://disqus.com/) ready: set `disqus: your_shortname` in `_config.yml`.
 - [Google Analytics](http://www.google.com/analytics/) ready: see `google_analytics` variable in `_config.yml`.
@@ -46,11 +47,10 @@ which you can then merge into your other branches.
 ## Updating
 
 The `Gemfile` is using pessimistic version constraints for everything,
-so if you want major updates, you need to bump the versions yourself.
+so if you don't want to wait for updates, you need to bump the versions yourself.
 
-JavaScript library versions need to be updated in `bower.json` and `_config.yml`.
-
-If you update Foundation, but sure to update the version numbers in `Gemfile` and `bower.json`.
+JavaScript library versions need to be updated in `bower.json` and `_config.yml` (for CDN support).
+If you want to update Foundation, update the version number in `bower.json`.
 
 ## License
 
