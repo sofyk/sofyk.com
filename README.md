@@ -1,8 +1,11 @@
-# Jekyll & ZURB
+# sofyk.com
 
-Source for my personal blog running on Jekyll and Foundation.
+[![Build Status](https://travis-ci.org/sofyk/sofyk.com.png?branch=master)](https://travis-ci.org/sofyk/sofyk.com)
 
-Just clone and blog: create the `_posts` and `_drafts` folder.
+Source for [my personal site](http://sofyk.com/) running on Jekyll and Foundation.
+
+The rest of this README, except for the License,
+is just cloned from [Jekyll & ZURB](https://github.com/razor-x/jekyll-and-zurb).
 
 Lots of baked in features that work even if you don't want to use Foundation.
 
@@ -140,7 +143,9 @@ If you want to update Foundation, update the version number in `bower.json`.
 
 ## License
 
-This code is licensed under the MIT license.
+This code is Copyright 2013 Sofy Kabachek,
+This site is built with [Jekyll & ZURB](https://github.com/razor-x/jekyll-and-zurb)
+which is licensed under the MIT license.
 
 ## Warranty
 
