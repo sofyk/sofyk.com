@@ -95,7 +95,7 @@
 
 - type: list
   lists:
-    - [ languages, C, C#, Python, JavaScript ]
+    - [ languages, C/C++, C#, Python, JavaScript ]
     - [ tools, Visual Studio, LabVIEW, MATLAB, Mathematica ]
     - [ design software, Unreal Dev. Kit, Unity, AutoCAD, SolidWorks ]
     - [ skills, Linear Algebra, Numerical Methods, Object Oriented Programing ]
