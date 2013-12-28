@@ -19,14 +19,14 @@
     <nav class="top-bar" data-topbar>
       <ul class="title-area">
         <li class="name">
-          <h1 id="site_name"><a href="/">{{ site.name }}</a></h1>
+          <h1 id="site_name"><a href="{{ site.root_url }}/">{{ site.name }}</a></h1>
         </li>
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
       </ul>
       <section class="top-bar-section">
         <ul class="left">
         {% for item in site.data.navigation.header.left %}
-          <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+          <li><a href="{{ site.root_url }}{{ item.url }}">{{ item.name }}</a></li>
         {% endfor %}
         </ul>
         <ul class="right icons">
@@ -45,7 +45,7 @@
   <footer id="colophon">
     <p><small>{{ site.name }} © {{ site.time | date: '%Y' }}</small></p>
   {% if site.social.facebook.enabled %}
-    <div class="fb-like" data-href="{{ site.domain }}{{ page.url }}" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+    <div class="fb-like" data-href="{{ site.root_url }}{{ page.url }}" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
   {% endif %}
 
   {% if site.social.google.enabled %}
