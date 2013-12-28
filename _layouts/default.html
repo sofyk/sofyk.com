@@ -1,24 +1,3 @@
----
-header:
-  nav:
-    left:
-      - name: contact
-        url: /resume/
-      - name: résumé
-        url: /resume/
-      - name: videos
-        url: /categories/videos/
-      - name: games
-        url: /categories/games/
-    right:
-      - name: '@SofyK_'
-        url: https://twitter.com/SofyK_
-        icon: fi-social-twitter
-      - name: LinkedIn
-        url: https://www.linkedin.com/pub/sofya-kabachek/22/626/702
-        icon: fi-social-linkedin
----
-
 <!DOCTYPE html>
 <!--[if IE 9]><html class="lt-ie10{% if page.unity3d %}unity {% endif %}" lang="en" prefix="og: http://ogp.me/ns#"> <![endif]-->
 <html class="no-js{% if page.unity3d %}unity {% endif %}" lang="en" prefix="og: http://ogp.me/ns#">
@@ -46,12 +25,12 @@ header:
       </ul>
       <section class="top-bar-section">
         <ul class="left">
-        {% for item in page.header.nav.left %}
+        {% for item in site.data.navigation.header.left %}
           <li><a href="{{ item.url }}">{{ item.name }}</a></li>
         {% endfor %}
         </ul>
         <ul class="right icons">
-          {% for item in page.header.nav.right %}
+          {% for item in site.data.navigation.header.right  %}
             <li>
               <a href="{{ item.url }}" title="{{ item.name }}" class="{{ item.icon }}"></a>
             </li>
