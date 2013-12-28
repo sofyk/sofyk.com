@@ -51,7 +51,8 @@ keywords: [ blog, personal ]
 # Uncomment below to set default meta info.
 meta:
   locale: en_US
-#   description: "My Site's default description."
+  description: |
+    Welcome to Sofy K’s (that’s me!) website. Here I post works and projects I create. They may include stories, comics, games and more! Hope you enjoy them. You can also find info about my professional background and a few ways to get in contact with me.
   title:
     prefix: ""
     suffix: " - Sofy Kabachek"

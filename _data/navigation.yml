@@ -8,6 +8,8 @@ header:
       url: /categories/videos/
     - name: games
       url: /categories/games/
+    - name: comics
+      url: /categories/comics/
   right:
     - name: '@SofyK_'
       url: https://twitter.com/SofyK_
