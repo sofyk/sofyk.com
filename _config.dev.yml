@@ -1,9 +1,8 @@
+domain: null
+
 assets:
-  sources:
-    - _assets/images
-    - _assets/javascripts
-    - _assets/stylesheets
-    - bower_components
+  baseurl: /assets/
+  cachebust: none
   cache: true
   compress:
     css: null
