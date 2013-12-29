@@ -19,14 +19,14 @@
     <nav class="top-bar" data-topbar>
       <ul class="title-area">
         <li class="name">
-          <h1 id="site_name"><a href="{{ site.root_url }}/">{{ site.name }}</a></h1>
+          <h1 id="site_name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
         </li>
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
       </ul>
       <section class="top-bar-section">
         <ul class="left">
         {% for item in site.data.navigation.header.left %}
-          <li><a href="{{ site.root_url }}{{ item.url }}">{{ item.name }}</a></li>
+          <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a></li>
         {% endfor %}
         </ul>
         <ul class="right icons">
@@ -82,7 +82,7 @@
     {% asset vendor/social-twitter %}
   {% endif %}
 
-  {% if site.disqus %}
+  {% if page.comments and site.disqus %}
     {% asset vendor/disqus %}
   {% endif %}
 

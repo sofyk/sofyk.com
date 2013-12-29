@@ -8,13 +8,13 @@
 <div class="post preview">
   <article class="post preview">
     <header>
-      <h2><a href="{{ site.root_url }}{{ post.url }}">{{ post.title }}</a></h2>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
     </header>
     <section>
     {% case post.type %}
     {% when 'image' %}
       <div class="thumb">
-        <a href="{{ site.root_url }}{{ post.url }}">{% picture post_preview {{ post.picture }} %}</a>
+        <a href="{{ site.baseurl }}{{ post.url }}">{% picture post_preview {{ post.picture }} %}</a>
       </div>
     {% when 'youtube' %}
       {% youtube {{ post.youtube }} %}
@@ -31,7 +31,7 @@
       <p>{{ excerpt }}</p>
     {% endif %}
     {% if excerpt or post.preview %}
-      <p class="more"><a href="{{ site.root_url }}{{ post.url }}">read more</a></p>
+      <p class="more"><a href="{{ site.baseurl }}{{ post.url }}">read more</a></p>
       </div>
     {% endif %}
     </section>
@@ -39,7 +39,7 @@
       {% if post.categories %}
         <ul class="categories">
         {% for category in post.categories %}
-          <li><a href="{{ site.root_url }}/categories/{{ category }}/">{{ category }}</a></li>
+          <li><a href="{{ site.baseurl }}/categories/{{ category }}/">{{ category }}</a></li>
         {% endfor %}
         </ul>
       {% endif %}

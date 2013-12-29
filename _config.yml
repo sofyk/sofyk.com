@@ -1,7 +1,7 @@
 # Jekyll options.
 name: Sofy Kabachek
 domain: http://sofyk.github.io/sofyk.com
-root_url: http://sofyk.github.io/sofyk.com
+baseurl: http://sofyk.github.io/sofyk.com
 markdown: redcarpet
 pygments: true
 permalink: /:month-:day-:year/:title/
