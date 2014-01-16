@@ -205,3 +205,8 @@ article.post.single
         padding-left: $resume_left_padding
       .info
         +grid-column($columns: 8, $collapse: true)
+
+// box-shadow on the top-bar menu is bugged
+.top-bar.expanded .toggle-topbar a span
+  box-shadow: none !important
+  -webkit-box-shadow: none !important
