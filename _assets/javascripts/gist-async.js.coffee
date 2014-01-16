@@ -1,7 +1,7 @@
 # Load GitHub Gists asynchronously
 # and optionally specify which file to show.
 #
-# Requires Modernizr.load and jQuery.
+# Requires yepnope and jQuery.
 #
 # Based on Mark Selby's async-gists.js:
 # https://gist.github.com/markselby/7209751
@@ -39,7 +39,7 @@ $ ->
       stylesheet = gist.data.stylesheet
       if stylesheets.indexOf(stylesheet) < 0
         stylesheets.push stylesheet
-        Modernizr.load(GIST_HOST + stylesheet)
+        yepnope(GIST_HOST + stylesheet)
 
       div = gist.data.div
       gist.files = $(div).find('.gist-file')
