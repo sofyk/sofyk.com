@@ -25,6 +25,12 @@ code
 
 // Header
 
+header.head
+  // Foundation adds 10px to the (sticky) top-nav parent on page scroll,
+  // this forces the top-nav to a fixed height.
+  height: $header_nav_height + 10px
+  margin-bottom: rem-calc(10)
+
 nav.top-bar
   ul.title-area
     padding-left: 0.2 * $content_padding
