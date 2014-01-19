@@ -1,6 +1,6 @@
 {
   "name": "Jekyll & ZURB",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "dependencies": {
     "console-polyfill": "0.1.0",
     "fastclick": "0.6.11",
