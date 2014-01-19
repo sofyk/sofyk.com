@@ -1,7 +1,7 @@
 # Jekyll options.
 name: Sofy Kabachek
-domain: http://sofyk.github.io/sofyk.com
-baseurl: http://sofyk.github.io/sofyk.com
+domain: http://sofyk.com
+baseurl: http://sofyk.com
 markdown: redcarpet
 pygments: true
 permalink: /:month-:day-:year/:title/
@@ -29,7 +29,7 @@ gems:
 
 # Jekyll::AssetsPlugin options.
 assets:
-  baseurl: http://sofyk.github.io/sofyk.com/assets/
+  baseurl: http://sofyk.com/assets/
   sources:
     - _assets/images
     - _assets/javascripts
