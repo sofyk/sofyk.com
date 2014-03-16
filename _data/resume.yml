@@ -104,10 +104,11 @@
 
 - type: list
   lists:
-    - [ languages, C/C++, C#, Python, JavaScript ]
-    - [ tools, Visual Studio, LabVIEW, MATLAB, Mathematica ]
-    - [ design software, Unreal Dev. Kit, Unity, AutoCAD, SolidWorks ]
+    - [ languages, C/C++, C#, Python, JavaScript, QML ]
+    - [ tools, Visual Studio, Qt Creator, LabVIEW, MATLAB, Mathematica, Spyder ]
+    - [ design software, Unreal Dev. Kit, Unity3D, AutoCAD, SolidWorks ]
     - [ skills, Linear Algebra, Numerical Methods, Object Oriented Programing ]
+    - [ operating systems, Windows, Linux ]
     - [ spoken languages, English, Hebrew, Russian]
 
 - type: section
