@@ -2,19 +2,6 @@
   objective: M.S. Software Engineer seeking to take part in a dynamic development team.
 
 - type: section
-  id: technical
-  name: technical skills
-
-- type: list
-  lists:
-    - [ languages, C/C++, C#, Python, JavaScript, QML ]
-    - [ tools, Visual Studio, Qt Creator, LabVIEW, MATLAB, Mathematica, Spyder ]
-    - [ design software, Unreal Dev. Kit, Unity3D, AutoCAD, SolidWorks ]
-    - [ skills, Linear Algebra, Numerical Methods, Object Oriented Programing ]
-    - [ operating systems, Windows, Linux ]
-    - [ spoken languages, English, Hebrew, Russian]
-
-- type: section
   id: experience
 
 - type: entry
@@ -110,6 +97,19 @@
   start: 2001-09-01
   end: 2004-11-01
   location: Rishon Lezion, Israel
+
+- type: section
+  id: technical
+  name: technical skills
+
+- type: list
+  lists:
+    - [ languages, C/C++, C#, Python, JavaScript, QML ]
+    - [ tools, Visual Studio, Qt Creator, LabVIEW, MATLAB, Mathematica, Spyder ]
+    - [ design software, Unreal Dev. Kit, Unity3D, AutoCAD, SolidWorks ]
+    - [ skills, Linear Algebra, Numerical Methods, Object Oriented Programing ]
+    - [ operating systems, Windows, Linux ]
+    - [ spoken languages, English, Hebrew, Russian]
 
 - type: section
   id: awards
