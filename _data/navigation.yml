@@ -4,8 +4,8 @@ header:
       url: /resume/
     - name: résumé
       url: /resume/
-    - name: videos
-      url: /categories/videos/
+    - name: stories
+      url: /categories/stories/
     - name: games
       url: /categories/games/
     - name: comics
@@ -15,5 +15,5 @@ header:
       url: https://twitter.com/SofyK_
       icon: fi-social-twitter
     - name: LinkedIn
-      url: https://www.linkedin.com/pub/sofya-kabachek/22/626/702
+      url: https://www.linkedin.com/in/sofyk
       icon: fi-social-linkedin
