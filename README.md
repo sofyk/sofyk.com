@@ -1,6 +1,6 @@
 # sofyk.com
 
-[![Build Status](https://travis-ci.org/sofyk/sofyk.com.png?branch=content)](https://travis-ci.org/sofyk/sofyk.com)
+[![Build Status](http://img.shields.io/travis/sofyk/sofyk.com/content.svg)](https://travis-ci.org/sofyk/sofyk.com)
 
 Source for [my personal site](http://sofyk.com/) running on Jekyll and Foundation.
 
