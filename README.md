@@ -1,6 +1,7 @@
 # sofyk.com
 
-[![Build Status](https://travis-ci.org/sofyk/sofyk.com.png?branch=content)](https://travis-ci.org/sofyk/sofyk.com)
+[![All rights reserved](http://img.shields.io/badge/license-All_rights_reserved-red.svg?style=flat)](./LICENSE.txt)
+[![Build Status](http://img.shields.io/travis/sofyk/sofyk.com/content.svg?style=flat)](https://travis-ci.org/sofyk/sofyk.com)
 
 Source for [my personal site](http://sofyk.com/) running on Jekyll and Foundation.
 
@@ -52,7 +53,7 @@ Lots of baked in features that work even if you don't want to use Foundation.
 
 ## Quick start
 
-You will need [Ruby Bundler](http://bundler.io/) and [Bower](http://bower.io/).
+You will need Ruby ≥ 2 with [Bundler](http://bundler.io/) and [Bower](http://bower.io/).
 
 Just clone this with
 
@@ -83,9 +84,9 @@ If you want to merge in future updates from this project and have your own origi
 set up a separate branch to track this.
 
 ````bash
-$ git remote rename origin razor-x-jekyll-and-zurb
+$ git remote rename origin upstream
 $ git branch jekyll-and-zurb
-$ git branch -u razor-x-jekyll-and-zurb/master jekyll-and-zurb
+$ git branch -u upstream/master jekyll-and-zurb
 ````
 
 Then add an origin and push master
@@ -101,9 +102,9 @@ which you can then merge into your other branches.
 If you later clone your repo you will need to create the update branch again.
 
 ````bash
-$ git remote add razor-x-jekyll-and-zurb https://github.com/razor-x/jekyll-and-zurb.git
-$ git fetch razor-x-jekyll-and-zurb
-$ git checkout -b jekyll-and-zurb razor-x-jekyll-and-zurb/master
+$ git remote add upstream https://github.com/razor-x/jekyll-and-zurb.git
+$ git fetch upstream
+$ git checkout -b jekyll-and-zurb upstream/master
 ````
 
 ## Automatic publishing to GitHub pages with Travis CI
@@ -167,9 +168,10 @@ If you want to update Foundation, update the version number in `bower.json`.
 
 ## License
 
-This code is Copyright 2013 Sofy Kabachek,
+The code and content for this site is Copyright © 2013-2014 Sofy Kabachek.
+
 This site is built with [Jekyll & ZURB](https://github.com/razor-x/jekyll-and-zurb)
-which is licensed under the MIT license.
+which is licensed under the [MIT license](./MIT-LICENSE.txt).
 
 ## Warranty
 

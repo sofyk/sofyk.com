@@ -1,5 +1,23 @@
 # Changelog
 
+## 2.3.0
+
+- Jekyll to 2.1.0.
+- Foundation to 5.3.0.
+- Other component versions updated.
+
+## 2.2.0
+
+- Foundation updated to version 5.2.2.
+- Added Display Advertising to Google Analytics Tracking Code.
+
+## 2.1.0
+
+- Foundation updated to version 5.1.1.
+- jQuery updated to version 2.1.0.
+- Normalize.css updated to version 3.0.0.
+- Added 'use strict'.
+
 ## 2.0.0
 
 - Foundation updated to version 5.0.3.
