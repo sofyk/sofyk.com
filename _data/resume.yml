@@ -7,7 +7,7 @@
 
 - type: list
   lists:
-    - [ languages, C/C++, C#, Python, JavaScript, QML ]
+    - [ languages, C/C++, C#, Python, QML ]
     - [ tools, Visual Studio, Qt Creator, LabVIEW, MATLAB, Mathematica, Spyder ]
     - [ design software, Unreal Dev. Kit, Unity3D, AutoCAD, SolidWorks ]
     - [ skills, Linear Algebra, Numerical Methods, Object Oriented Programing ]
