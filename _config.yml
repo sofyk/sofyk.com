@@ -1,7 +1,8 @@
+---
 # Jekyll options.
 name: Sofy Kabachek
-domain: http://sofyk.com
-baseurl: http://sofyk.com
+domain: https://sofyk.com
+baseurl: https://sofyk.com
 markdown: redcarpet
 highlighter: pygments
 permalink: /:month-:day-:year/:title/
@@ -20,6 +21,7 @@ exclude:
   - Rakefile
   - bower.json
   - bower_components
+  - vendor
 
 gems:
   - json
@@ -29,7 +31,7 @@ gems:
 
 # Jekyll::AssetsPlugin options.
 assets:
-  baseurl: http://sofyk.com/assets/
+  baseurl: https://sofyk.com/assets/
   sources:
     - _assets/images
     - _assets/javascripts
@@ -142,6 +144,6 @@ social:
 # Each array has the format
 # - [ repo, branch, subdirectory, treeish (optional) ]
 # Uncomment this example to includes a copy of the gh-pages branch of this repo at
-# http://razor-x.github.io/jekyll-and-zurb/inception/jekyll-and-zurb/
+# https://razor-x.github.io/jekyll-and-zurb/inception/jekyll-and-zurb/
 # :sub_content:
 #   - [ "https://github.com/razor-x/jekyll-and-zurb", gh-pages, inception/jekyll-and-zurb ]
