@@ -3,7 +3,7 @@
 [![All rights reserved](https://img.shields.io/badge/license-All_rights_reserved-red.svg?style=flat)](./LICENSE.txt)
 [![Build Status](https://img.shields.io/travis/sofyk/sofyk.com/content.svg?style=flat)](https://travis-ci.org/sofyk/sofyk.com)
 
-Source for [my personal site](http://sofyk.com/) running on Jekyll and Foundation.
+Source for [my personal site](https://sofyk.com/) running on Jekyll and Foundation.
 
 The rest of this README, except for the License,
 is just cloned from [Jekyll & ZURB](https://github.com/razor-x/jekyll-and-zurb).
