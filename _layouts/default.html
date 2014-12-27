@@ -12,7 +12,7 @@
   <script>{% asset load.js %}</script>
 </head>
 
-<body>
+<body style="display:none;">
   <header class="head contain-to-grid{% unless page.unity3d %} sticky{% endunless %}">
     <nav class="top-bar" data-topbar>
       <ul class="title-area">
@@ -51,7 +51,6 @@
 
   <script>
     'use strict';
-    document.getElementsByTagName('body')[0].style.display = 'none'
 
     {% asset console-polyfill %}
 
