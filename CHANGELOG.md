@@ -1,5 +1,24 @@
 # Changelog
 
+## 2.6.1
+
+- Avoid flash of unstyled content due to asynchronously loading CSS.
+- Travis CI updates.
+- Require fonts in head.js instead of inline.
+
+## 2.6.0
+
+- Enable autosize for Jekyll Assets.
+- Load app.css with HeadJS.
+- Optimize script loading.
+- Replace yepnope with HeadJS.
+
+## 2.5.0
+
+- Update Foundation to 5.5.0.
+- Update jQuery to 2.1.3.
+- Update mini_magick to 4.0.1.
+
 ## 2.4.1
 
 - Update highlightjs to 8.4.
