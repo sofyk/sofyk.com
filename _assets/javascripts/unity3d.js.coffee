@@ -36,9 +36,6 @@ window.unity3dLoader = (config, file) ->
 
     u.initPlugin($('#unityPlayer')[0], file)
 
-  yepnope([{
-    load: 'https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js'
-    complete: () -> load()
-  }])
+  head.load 'https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js', -> load()
 
 if typeof(loadUnity3dLoader) == 'function' then loadUnity3dLoader()
