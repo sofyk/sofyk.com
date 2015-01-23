@@ -1,5 +1,38 @@
 # Changelog
 
+## 2.7.5
+
+- Don't use async loading for critial assets
+  to prevent flash of unstyled content.
+
+## 2.7.4
+
+- Update Google +1 Button code.
+- Update Facebook Like Button code.
+
+## 2.7.3
+
+- Fix issue where display property on body could cause display bugs.
+
+## 2.7.2
+
+- Regenerate bower.json.
+
+## 2.7.1
+
+Version 2.6.1 introduced a change that would
+print your deploy token in the Travis CI build.
+
+If you suspect you were affected:
+**regenerate your personal access tokens!**
+
+- Hide secure token in deploy_url.
+
+## 2.7.0
+
+- Add favicon.
+- Add LiveReload support.
+
 ## 2.6.2
 
 - Fix body display bug.

@@ -1,7 +1,10 @@
 'use strict'
 
-head.load '<%= site.asset_path "app.css" %>', ->
-  document.getElementsByTagName('body')[0].style.display = 'initial'
+<% if site.config['livereload'] %>
+<% if site.config['livereload']['enable'] %>
+head.load "#{window.location.protocol}//#{window.location.hostname}:<%= site.config['livereload']['port'] %>/livereload.js"
+<% end %>
+<% end %>
 
 load_app = ->
   if <%= site.config['cdn']['libs'].transpose[1].join ' && ' %>
