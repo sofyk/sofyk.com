@@ -7,8 +7,9 @@
 
 - type: list
   lists:
-    - [ languages, C/C++, C#, Python, QML ]
+    - [ languages, JavaScript, HTML, CSS, QML, C/C++, C#, Python ]
     - [ tools, Visual Studio, Qt Creator, LabVIEW, MATLAB, Mathematica, Spyder ]
+    - [ frameworks, Qt, Bootstrap 3, Backbone.js]
     - [ design software, Unreal Dev. Kit, Unity3D, AutoCAD, SolidWorks ]
     - [ skills, Linear Algebra, Numerical Methods, Object Oriented Programing ]
     - [ operating systems, Windows, Linux ]
@@ -18,28 +19,48 @@
   id: experience
 
 - type: entry
+  name: Philips Healthcare
+  start: 2015-02-01
+  end: present
+  location: 4100 E 3rd Ave, Foster City, CA 94404
+  description: Software Development Engineer
+
+- type: entry
+  name: Facilitron (emerging startup)
+  start: 2014-10-01
+  end: 2014-02-01
+  location: Santa Clara, CA 95054
+  description: Software Engineer
+  details:
+    - description: Collaborated on development and implementation of UI elements in a web application (HTML, JavaScript) for internal use
+      tasks:
+        - Implemented responsive UI (Bootstrap 3)
+        - Extended data models and views (Backbone.js)
+        - Implemented asynchronous communication with a server (AJAX)
+
+- type: entry
   name: Flowserve Corporation
   start: 2012-06-01
-  end: present
+  end: 2014-10-01
   location: 27455 Tierra Alta Way, Temecula, CA 92590
   description: R&D Engineer
   details:
-    - description: Project Manager - Varian helium leak detection process improvement
+    - description: Project Lead - Varian helium leak detection process improvement
       tasks:
         - Gathered information on current process and future expectations
         - Compiled design specifications
         - Designed, developed, and implemented UI/UX extension for detector
         - Implemented communication over RS-232 port using termios.h
         - Developed for Linux using cross-platform Qt framework (C++, QML)
-        - Incorporates Lilliput touchscreen and DYMO® LabelManager™ printer
         - Gathered user feedback and implemented improvements accordingly
-    - description: Responsible for full process development of surface measurement
+    - description: Responsible for process development of seal face inspection with Taylor Hobson surface measurement machine
       tasks:
-        - Implemented automated motion control for newly procured Taylor Hobson (TH) surface measurement machine (Ultra)
-        - "Designed, developed, and implemented prototype analysis algorithms for TH exported data (Python), including: data display, Gaussian filtering, smart overall tilt exclusion, surface feature analysis, and more"
-        - Translated algorithm to labview adding UI/UX designed to closely mimic past process and nomenclature while eliminating redundant steps
+        - Designed, developed, and implemented prototype analysis algorithms for TH exported data (Python)
+        - Implemented data display (matplotlib), Gaussian filtering (NumPy), smart overall tilt exclusion, surface feature analysis, etc.
+        - Translated algorithm to LabVIEW adding UI/UX mimicking past process and nomenclature while eliminating redundant steps
         - Created instruction manuals for new surface measurement process
-        - Implemented additional features and modified UI based on user feedback (labview)
+        - Trained R&D and manufacturing personnel
+        - Modified and implemented features per user feedback (LabVIEW)
     - description: Designed mechanical seal components and assembly (autocad)
 
 - type: entry
