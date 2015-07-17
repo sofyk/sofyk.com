@@ -4,16 +4,15 @@ title: Warm-up Sketchbook 07/14/15
 categories:
  - stories
  - sketchbook
- 
-preview: |
-*Romance: An introduction made by a close friend sets up a romantic relationship. One of the characters is afraid of making a commitment. Opposites attract. The characters bond while going to a place that holds sentimental value.*
-
-They both showed up to cheer-up Robbie after a rough breakup. Even though they were best friends with Robbie for years now, they’ve never met. Robbie was convinced that the universe would implode if they ever do. They’ve heard stories of each other though. Many stories. None of them seemed to convince the other of the necessity for an introduction.
 ---
 
 This is a warm-up sketch. Find out more <a href="/07-12-2015/sketchbook/">HERE</a>.
 
-{{ page.preview }}
+*Romance: An introduction made by a close friend sets up a romantic relationship. One of the characters is afraid of making a commitment. Opposites attract. The characters bond while going to a place that holds sentimental value.*
+
+They both showed up to cheer-up Robbie after a rough breakup. Even though they were best friends with Robbie for years now, they’ve never met. Robbie was convinced that the universe would implode if they ever do. They’ve heard stories of each other though. Many stories. None of them seemed to convince the other of the necessity for an introduction.
+
+<!--more-->
 
 But this was an emergency. Robbie was on the verge of buying a ticket to Tonga. He aimed to follow his now-ex girlfriend who was recently engaged to a local rugby player. Robbie was convinced that if only they could see each other again, their love would reignite into a fiery sun, and all will be well. Sarah and Eric knew better. They arrived at the scene just in time to stop Robbie from confirming his flight order.
 Of course Robbie would claim that he was nowhere near confirming the flight, simply entertaining an idea. And that slamming his laptop shut and throwing it across the room may have been an over reaction. But, as was mentioned before, Sarah and Eric knew better.
