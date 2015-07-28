@@ -1,5 +1,35 @@
 # Changelog
 
+## HEAD
+
+- Switch to using [rake-jekyll] for git based deployment.
+  You may now set the `SOURCE_BRANCH` environment variable
+  to enable testing on all other branches.
+- Split main body content out from the default layout
+  and into a new body layout.
+- Use gist-aysnc bower package.
+- Remove Sub-content feature.
+- Add staging environment support for Travis CI builds.
+- Add 404 page.
+- Optimize Travis build by adding bower to package.json.
+
+[rake-jekyll]: https://github.com/jirutka/rake-jekyll
+
+## 2.9.1
+
+- Update jQuery to 2.1.4.
+
+## 2.9.0
+
+- Update Foundation to 5.2.2.
+- Use `<noscript>` tag and no `src` for picture-tag interchange mode.
+- Travis CI deployment now uses deploy keys instead of personal access tokens.
+  If you use this feature you must follow the new setup instructions.
+
+## 2.8.2
+
+- Travis CI optimizations.
+
 ## 2.8.1
 
 - Fix Twitter button width bug.

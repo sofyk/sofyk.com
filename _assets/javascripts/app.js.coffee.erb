@@ -1,7 +1,7 @@
 # Add JavaScript required for your app (will be compressed together).
 #= require unity3d
 #= require highlightjs
-#= require vendor/gist-async
+#= require gist-async
 #= require foundation/js/foundation/foundation
 #= require foundation/js/foundation/foundation.topbar
 #= require foundation/js/foundation/foundation.magellan
@@ -13,7 +13,7 @@
 # Require JavaScript for responsive images.
 <% case site.config['picture']['markup']
     when 'picturefill'
-      require_asset 'vendor/picturefill'
+      require_asset 'picturefill'
     when 'interchange'
       require_asset 'foundation/js/foundation/foundation.interchange'
     end unless site.config['picture'].nil?
