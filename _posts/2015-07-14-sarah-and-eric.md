@@ -25,4 +25,4 @@ Whenever one has to make difficult and complex decisions with a wide array of co
 
 ***
 
-This is a warm-up sketch. Find out more <a href="/07-12-2015/sketchbook/">HERE</a>.
+This is a warm-up sketch. Find out more <a href="/07-13-2015/sketchbook/">HERE</a>.
