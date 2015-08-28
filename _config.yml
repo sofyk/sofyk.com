@@ -31,8 +31,8 @@ livereload:
 gems:
   - json
   - jekyll-assets
-  - jekyll-assets/compass
   - coffee_script
+  - compass
 
 # Jekyll::AssetsPlugin options.
 assets:
@@ -85,8 +85,8 @@ google_analytics:
 
 # Uncomment below to enable deploy.
 # deploy:
-#   # only rsync supported
-#   protocol: rsync
+#   # only :rsync supported
+#   protocol: :rsync
 #   # domain name
 #   server: example.com
 #   # remote username
