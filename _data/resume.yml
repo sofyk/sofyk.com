@@ -7,26 +7,45 @@
 
 - type: list
   lists:
-    - [ languages, JavaScript, HTML, CSS, QML, C/C++, C#, Python ]
-    - [ tools, Visual Studio, Qt Creator, LabVIEW, MATLAB, Mathematica, Spyder ]
-    - [ frameworks, Qt, Bootstrap 3, Backbone.js]
-    - [ design software, Unreal Dev. Kit, Unity3D, AutoCAD, SolidWorks ]
-    - [ skills, Linear Algebra, Numerical Methods, Object Oriented Programing ]
-    - [ operating systems, Windows, Linux ]
-    - [ spoken languages, English, Hebrew, Russian]
+    - [ Languages, C++, QML, C#, JavaScript, HTML, CSS ]
+    - [ Skills, Object-Oriented Prog., Linear Algebra, Numerical Methods, Flux Architecture, MV* Patterns, Behavior Driven Development ]
+    - [ Published Games, The Walking Dead: A New Frontier, Batman: The Telltale Series, The Walking Dead: Michonne, Minecraft: Story Mode, DataJack ]
+    - [ Frameworks, Qt, React, AngularJS, Jasmine, Mocha, Bootstrap 3]
+    - [ Tools, Visual Studio, Sublime Text 3, Qt Creator, Browser Developer Tools ]
+    - [ Operating Systems, Windows, Linux ]
+    - [ Design Software, Unreal Dev. Kit, Unity3D, AutoCAD, SolidWorks ]
+    - [ Spoken Languages, English, Hebrew, Russian]
 
 - type: section
   id: experience
 
 - type: entry
-  name: Philips Healthcare
-  start: 2015-02-01
-  end: present
-  location: 4100 E 3rd Ave, Foster City, CA 94404
-  description: Software Development Engineer
+  name: Telltale Games
+  start: 2014-10-01
+  location: 4000 Civic Center Dr, San Rafael, CA 94903
+  description: Software Engineer
+  details:
+    - description: Designed, developed, and implemented new features and supported existing features for various systems (C++, Qt)
+      tasks:
+        - Facial and body mood transition systems
+        - Lip sync systems
+        - Choreography authoring tools and playback
 
 - type: entry
-  name: Facilitron (emerging startup)
+  name: Philips Healthcare
+  start: 2015-02-01
+  end: 2016-02-01
+  location: 4100 E 3rd Ave, Foster City, CA 94404
+  description: Software Development Engineer
+  details:
+    - description: Advanced Workﬂow plugin for use in radiology imaging
+      tasks:
+        - Co-designed data ﬂow architecture (Flux)
+        - Implemented elements of data ﬂow architecture
+        - Researched and presented new tool stack to R&D department
+        
+- type: entry
+  name: Facilitron
   start: 2014-10-01
   end: 2015-02-01
   location: Santa Clara, CA 95054
