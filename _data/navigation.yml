@@ -1,7 +1,5 @@
 header:
   left:
-    - name: contact
-      url: /resume/
     - name: résumé
       url: /resume/
     - name: stories
