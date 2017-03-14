@@ -9,7 +9,7 @@
   lists:
     - [ Languages, C++, QML, C#, JavaScript, HTML, CSS ]
     - [ Skills, Object-Oriented Prog., Linear Algebra, Numerical Methods, Flux Architecture, MV* Patterns, Behavior Driven Development ]
-    - [ Published Games, The Walking Dead: A New Frontier, Batman: The Telltale Series, The Walking Dead: Michonne, Minecraft: Story Mode, DataJack ]
+    - [ Published Games, "The Walking Dead: A New Frontier", "Batman: The Telltale Series", "The Walking Dead: Michonne", "Minecraft: Story Mode", DataJack ]
     - [ Frameworks, Qt, React, AngularJS, Jasmine, Mocha, Bootstrap 3]
     - [ Tools, Visual Studio, Sublime Text 3, Qt Creator, Browser Developer Tools ]
     - [ Operating Systems, Windows, Linux ]
@@ -22,6 +22,7 @@
 - type: entry
   name: Telltale Games
   start: 2014-10-01
+  end: present
   location: 4000 Civic Center Dr, San Rafael, CA 94903
   description: Software Engineer
   details:
