@@ -67,10 +67,6 @@ meta:
   title:
     prefix: ""
     suffix: " - Sofy Kabachek"
-  twitter:
-    default_card: summary
-    site: "@SofyK_"
-    creator: "@SofyK_"
 
 # Uncomment below and add your Disqus Shortname to enable Disqus.
 # disqus: shortname
