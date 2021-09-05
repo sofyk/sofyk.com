@@ -1,17 +1,12 @@
 header:
   left:
-    - name: résumé
-      url: /resume/
-    - name: stories
-      url: /categories/stories/
     - name: games
       url: /categories/games/
+    - name: stories
+      url: /categories/stories/
     - name: comics
       url: /categories/comics/
   right:
-    - name: '@SofyK_'
-      url: https://twitter.com/SofyK_
-      icon: fi-social-twitter
     - name: LinkedIn
       url: https://www.linkedin.com/in/sofyk
       icon: fi-social-linkedin
