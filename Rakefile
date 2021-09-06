@@ -48,7 +48,7 @@ task default: [:draft]
 
 # rake travis
 desc 'Generate site from Travis CI and publish site to GitHub Pages'
-task travis: [:staging_env, :travis_env, :publish]
+task travis: [:staging_env, :publish]
 
 # rake build
 desc 'Generate the site'
