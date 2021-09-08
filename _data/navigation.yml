@@ -1,0 +1,13 @@
+- name: Personal Projects
+  link: /personal-projects/
+  dropdown:
+  - name: Stories
+    link: /tag/stories/
+  - name: Games
+    link: /tag/games/
+  - name: Comics
+    link: /tag/comics/
+  - name: All
+    link: /personal-projects/
+- name: LinkedIn
+  link: https://www.linkedin.com/in/sofyk

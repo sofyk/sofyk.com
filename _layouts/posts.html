@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<section class="posts content">
+	<div>
+		{% for post in site.posts %}
+			<div style="padding:20px;">
+				{% include post-card.html %}
+			</div>
+		{% endfor %}
+	</div>
+</section>

@@ -21,15 +21,14 @@
 title: Sofy Kabachek
 email: ''
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to Sofy K’s (that’s me!) website.
-  Here I post works and projects I create.
-  They include stories, comics, games and more!
-  Hope you enjoy them.
+  Welcome to my site!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://sofyk.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: bulma-clean-theme
+hide_share_buttons: true
+fixed_navbar: top
 plugins:
   - jekyll-feed
 

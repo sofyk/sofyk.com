@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<section class="posts content">
+	<div>
+		{% for post in site.posts %}
+			{% if post.tags contains page.tag %}
+				<div style="padding:20px;">
+					{% include post-card.html %}
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+</section>

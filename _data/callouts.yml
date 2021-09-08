@@ -1,0 +1,26 @@
+style: is-light
+height: is-medium
+items:
+  - title: Stories
+    subtitle: Stories I've written
+    icon: fa-book
+    # icon_brand: true
+    # description:
+    call_to_action_name: Take me to Stories
+    call_to_action_link: /tag/stories/
+
+  - title: Games
+    subtitle: Games I've made
+    icon: fa-gamepad
+    # icon_brand: true
+    # description:
+    call_to_action_name: Take me to Games
+    call_to_action_link: /tag/games/
+
+  - title: Comics
+    subtitle: Comics I've made
+    icon: fa-comments
+    # icon_brand: true
+    # description:
+    call_to_action_name: Take me to Comics
+    call_to_action_link: /tag/comics/

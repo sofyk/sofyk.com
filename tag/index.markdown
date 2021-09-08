@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Sofy Kabachek
-subtitle: Welcome to my site!<br>Here I post personal projects I create.<br>They include stories, comics, games and more.<br>Hope you enjoy them!
-hero_height: is-large
+title: Project Categories
+subtitle: Check out projects by category
+hero_height: is-medium
 show_sidebar: false
 callouts: callouts
 ---
