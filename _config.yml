@@ -1,145 +1,54 @@
----
-# Jekyll options.
-name: Sofy Kabachek
-domain: https://sofyk.com
-baseurl: https://sofyk.com
-markdown: redcarpet
-highlighter: pygments
-permalink: /:month-:day-:year/:title/
-excerpt_separator: <!--more-->
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-# Uncomment below to enable pagination.
-# paginate: 5
+title: Sofy Kabachek
+email: ''
+description: >- # this means to ignore newlines until "baseurl:"
+  Welcome to Sofy K’s (that’s me!) website.
+  Here I post works and projects I create.
+  They include stories, comics, games and more!
+  Hope you enjoy them.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://sofyk.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-exclude:
-  - CHANGELOG.md
-  - LICENSE.txt
-  - README.md
-  - VERSION
-  - Gemfile.lock
-  - Gemfile
-  - Guardfile
-  - Rakefile
-  - bower.json
-  - bower_components
-  - node_modules
-  - vendor
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
 
-livereload:
-  port: 35729
-
-gems:
-  - json
-  - jekyll-assets
-  - coffee_script
-  - compass
-
-# Jekyll::AssetsPlugin options.
-assets:
-  baseurl: https://sofyk.com/assets/
-  sources:
-    - _assets/images
-    - _assets/javascripts
-    - _assets/stylesheets
-    - bower_components
-  compress:
-    css: sass
-    js: uglifier
-  autosize: true
-
-# Use a CDN to load some libraries.
-# Libraries are loaded first, asynchronously,
-# and should not depend on each other.
-cdn_enabled: true
-cdn:
-  # [ url, loaded check, local asset fallback path ]
-  libs:
-    - [ "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js", "window.jQuery", "jquery/dist/jquery" ]
-
-# Keywords will be merged with categories, tags, and page keywords.
-keywords: [ blog, personal ]
-
-# Uncomment below to set default meta info.
-meta:
-  locale: en_US
-  description: |
-    Welcome to Sofy K’s (that’s me!) website. Here I post works and projects I create. They may include stories, comics, games and more! Hope you enjoy them. You can also find info about my professional background and a few ways to get in contact with me.
-  title:
-    prefix: ""
-    suffix: " - Sofy Kabachek"
-
-# Uncomment below and add your Disqus Shortname to enable Disqus.
-# disqus: shortname
-
-# Uncomment below and add your Tracking ID and URL to enable Google Analytics.
-google_analytics:
-  id: UA-16103694-3
-  url: sofyk.com
-
-# Uncomment below and add your Piwik URL to enable Piwik.
-# piwik: https://example.com/piwik/
-
-# Uncomment below to enable deploy.
-# deploy:
-#   # only :rsync supported
-#   protocol: :rsync
-#   # domain name
-#   server: example.com
-#   # remote username
-#   user: www
-#   # remote port
-#   port: 22
-#   # path to remote folder where contents of _site should go
-#   # must have trailing slash
-#   path: /var/www/example.com/htdocs/
-#   # site files and folders that should be uploaded but not synced
-#   # remote content will not be removed from these files and folders
-#   upload_only:
-#     - content/
-
-# Foundation Interchange markup support added to
-# Jekyll Picture Tag (https://github.com/robwierzbowski/jekyll-picture-tag)
-# Uncomment below to enable responsive images.
-picture:
-  markup: 'interchange'
-  source: pictures/fullsize
-  output: pictures
-  presets:
-    default:
-      ppi: [ 1, 1.5, 2 ]
-      source_large:
-        media: '(large)'
-        width: '1440'
-      source_medium:
-        media: '(medium)'
-        width: '1280'
-      source_small:
-        media: '(small)'
-        width: '768'
-      source_default:
-        width: '500'
-    post_preview:
-      ppi: [ 1, 1.5, 2 ]
-      source_large:
-        media: '(large)'
-        width: '1440'
-      source_medium:
-        media: '(medium)'
-        width: '1280'
-      source_small:
-        media: '(small)'
-        width: '768'
-      source_default:
-        width: '500'
-
-# Uncomment below to configure social media.
-# social:
-#   facebook:
-#     enabled: true
-#   google:
-#     enabled: true
-#     gcfg:
-#       lang: en-US
-#       parsetags: onload
-#   twitter:
-#     enabled: true
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

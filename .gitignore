@@ -1,6 +1,5 @@
-.jekyll-assets-cache/
-.sass-cache/
-npm-debug.log
-_site/
-bower_components/
-node_modules/
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
