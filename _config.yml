@@ -30,6 +30,7 @@ permalink: /:month-:day-:year-:title/
 theme: bulma-clean-theme
 hide_share_buttons: true
 fixed_navbar: top
+theme_color: '#9400D3'
 plugins:
   - jekyll-feed
 
@@ -51,3 +52,21 @@ exclude:
   - vendor/
   - bower_components/
   - favicon_io/
+
+sass:
+  style: compressed
+  source_dir: _sass
+
+markdown: kramdown
+highlighter: rouge
+
+
+# gh-pages config
+lsi: false
+safe: true
+incremental: false
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
