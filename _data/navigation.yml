@@ -1,5 +1,5 @@
 - name: Personal Projects
-  link: /personal-projects/
+  link: /tag/
   dropdown:
   - name: Stories
     link: /tag/stories/
@@ -7,7 +7,9 @@
     link: /tag/games/
   - name: Comics
     link: /tag/comics/
+  - name: Writing Sketchbook
+    link: /tag/writing-sketchbook/
   - name: All
-    link: /personal-projects/
+    link: /tag/all/
 - name: LinkedIn
   link: https://www.linkedin.com/in/sofyk

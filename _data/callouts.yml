@@ -17,10 +17,10 @@ items:
     call_to_action_name: Take me to Games
     call_to_action_link: /tag/games/
 
-  - title: Comics
-    subtitle: Comics I've made
-    icon: fa-comments
+  - title: All Projects
+    subtitle: See all the projects
+    icon: fa-list
     # icon_brand: true
-    # description:
-    call_to_action_name: Take me to Comics
-    call_to_action_link: /tag/comics/
+    # description: 
+    call_to_action_name: Take me to All Projects
+    call_to_action_link: /tag/all/

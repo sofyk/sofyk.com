@@ -5,7 +5,9 @@ date: 2013-08-25 00:00:04
 author: Sofy Kabachek
 tags:
 - stories
+
 description: "A phone ring attempted to pull Janet away from her dreams. She was dissatisfied with that fact, as she was having a delightful dream."
+
 # image:
 # summery:
 
@@ -17,11 +19,7 @@ published: true
 
 ### Daly City, 2 Shoal Dr – 3:00am
 
-A phone ring attempted to pull Janet away from her dreams. She was dissatisfied with that fact, as she was having a delightful dream. Janet M. Rouge was just about to outsmart the pompous, intolerable, and arrogant Alexander Darren Keen, also known as “Ass Holmes” among the local police force. Mr. Keen was about to be humiliated in front of the Chief of Police and whole of San Francisco's news broadcasts, if not for the second phone ring that finally woke Janet up.
-
-“Janet speaking,” she said in a half dreaming voice, but her expression quickly acquired alertness, and she jumped out of bed.
-
-“I'll be right over.”
+{{ page.excerpt }}
 
 ### San Francisco, Pier 38 – 3:15am
 

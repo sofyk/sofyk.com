@@ -4,5 +4,4 @@ title: Stories
 subtitle: Stories I've written
 tag: stories
 hero_height: is-medium
-permalink: /tag/stories/
 ---
