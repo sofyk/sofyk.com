@@ -25,17 +25,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Technology, it doesn’t always do what it is asked…" />
 <meta property="og:description" content="Technology, it doesn’t always do what it is asked…" />
-<link rel="canonical" href="http://localhost:4000/08-24-2013-technichal-dificulties/" />
-<meta property="og:url" content="http://localhost:4000/08-24-2013-technichal-dificulties/" />
+<link rel="canonical" href="http://sofyk.com/08-24-2013-technichal-dificulties/" />
+<meta property="og:url" content="http://sofyk.com/08-24-2013-technichal-dificulties/" />
 <meta property="og:site_name" content="Sofy Kabachek" />
-<meta property="og:image" content="http://localhost:4000/pictures/fullsize/technichal_dificulties.jpg" />
+<meta property="og:image" content="http://sofyk.com/pictures/fullsize/technichal_dificulties.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2013-08-24T17:00:07-07:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:4000/pictures/fullsize/technichal_dificulties.jpg" />
+<meta property="twitter:image" content="http://sofyk.com/pictures/fullsize/technichal_dificulties.jpg" />
 <meta property="twitter:title" content="Technical Difficulties" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/08-24-2013-technichal-dificulties/"},"url":"http://localhost:4000/08-24-2013-technichal-dificulties/","author":{"@type":"Person","name":"Sofy Kabachek"},"headline":"Technical Difficulties","dateModified":"2013-08-24T17:00:07-07:00","@type":"BlogPosting","datePublished":"2013-08-24T17:00:07-07:00","image":"http://localhost:4000/pictures/fullsize/technichal_dificulties.jpg","description":"Technology, it doesn’t always do what it is asked…","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://sofyk.com/08-24-2013-technichal-dificulties/"},"url":"http://sofyk.com/08-24-2013-technichal-dificulties/","author":{"@type":"Person","name":"Sofy Kabachek"},"headline":"Technical Difficulties","dateModified":"2013-08-24T17:00:07-07:00","@type":"BlogPosting","datePublished":"2013-08-24T17:00:07-07:00","image":"http://sofyk.com/pictures/fullsize/technichal_dificulties.jpg","description":"Technology, it doesn’t always do what it is asked…","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- head scripts --></head>
 
@@ -118,9 +118,31 @@
 
     <p>Published: Aug 24, 2013 by Sofy Kabachek</p>
 
-    <p><img src="/pictures/fullsize/technichal_dificulties.jpg" alt="corporate espionage" /></p>
+    <div>
+  <div>
+    Technology, it doesn't always do what it is asked...
+  </div>
+  <div style="padding:20px;">
+    <div x-data="{ open: false }">
+      <a @click="open = true" title="View large image">
+        <figure class="image">
+          <img src="/pictures/fullsize/technichal_dificulties.jpg" alt="Technical Difficulties">
+        </figure>
+      </a>
+      <div class="modal" :class="{ 'is-active': open }">
+        <div class="modal-background" @click="open = false"></div>
+        <div class="modal-content">
+          <img src="/pictures/fullsize/technichal_dificulties.jpg" alt="Technical Difficulties">
+        </div>
+        <button class="modal-close is-large" aria-label="close" @click="{ open = false }"></button>
+      </div>
+    </div>
+  </div>
+  <div>
+    
 
-<p>Technology, it doesn’t always do what it is asked…</p>
+  </div>
+</div>
 
 </div>
 
