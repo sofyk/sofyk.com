@@ -92,7 +92,7 @@
 </nav>
 
     
-        <section class="hero  is-small  is-bold is-primary" >
+        <section class="hero  is-medium  is-bold is-primary" >
     <div class="hero-body ">
         <div class="container">
             <h1 class="title is-2">Corporate Espionage</h1>
@@ -118,9 +118,34 @@
 
     <p>Published: Aug 24, 2013 by Sofy Kabachek</p>
 
-    <p><img src="/pictures/fullsize/corporate_espionage.jpg" alt="corporate espionage" /></p>
+    <div>
+  <div>
+    Our professor told us about a class he took on corporate espionage. This is what it looked like in my head.
+  </div>
+  <div style="padding:20px;">
+    <div x-data="{ open: false }">
+    <a @click="open = true" title="View large image">
+        <figure class="image ">
+            <img src="http://localhost:4000/pictures/fullsize/corporate_espionage.jpg" alt="Example image">
+        </figure>
+    </a>
+    <div class="modal" :class="{ 'is-active': open }">
+        <div class="modal-background" @click="open = false"></div>
+        <div class="modal-content">
+            
+                <img src="http://localhost:4000/pictures/fullsize/corporate_espionage.jpg" alt="Example image">
+            
+        </div>
+        <button class="modal-close is-large" aria-label="close" @click="{ open = false }"></button>
+    </div>
+</div>
 
-<p>Our professor told us about a class he took on corporate espionage. This is what it looked like in my head.</p>
+  </div>
+  <div>
+    
+
+  </div>
+</div>
 
 </div>
 
