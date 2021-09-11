@@ -4,7 +4,7 @@ title: Technical Difficulties
 date: 2013-08-25 00:00:07
 author: Sofy Kabachek
 tags:
-- comics
+- drawings
 
 description: "Technology, it doesn't always do what it is asked..."
 

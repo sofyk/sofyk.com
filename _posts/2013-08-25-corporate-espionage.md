@@ -4,7 +4,7 @@ title: Corporate Espionage
 date: 2013-08-25 00:00:01
 author: Sofy Kabachek
 tags:
-- comics
+- drawings
 
 description: "Our professor told us about a class he took on corporate espionage. This is what it looked like in my head."
 
