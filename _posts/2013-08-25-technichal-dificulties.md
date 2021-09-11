@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-drawing
 title: Technical Difficulties
 date: 2013-08-25 00:00:07
 author: Sofy Kabachek
@@ -12,11 +12,4 @@ image: /pictures/fullsize/technichal_dificulties.jpg
 # summery:
 
 excerpt: Technology, it doesn't always do what it is asked...
-
-hero_height: is-small
-published: true
 ---
-
-![corporate espionage]({{page.image}})
-
-{{ page.excerpt }}

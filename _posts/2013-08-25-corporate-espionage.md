@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-drawing
 title: Corporate Espionage
 date: 2013-08-25 00:00:01
 author: Sofy Kabachek
@@ -13,10 +13,5 @@ image: /pictures/fullsize/corporate_espionage.jpg
 
 excerpt: Our professor told us about a class he took on corporate espionage. This is what it looked like in my head.
 
-hero_height: is-small
 published: true
 ---
-
-![corporate espionage]({{page.image}})
-
-{{ page.excerpt }}
