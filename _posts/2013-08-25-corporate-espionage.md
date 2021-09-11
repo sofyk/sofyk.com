@@ -1,5 +1,6 @@
 ---
 layout: post-drawing
+hero_height: is-small
 title: Corporate Espionage
 date: 2013-08-25 00:00:01
 author: Sofy Kabachek

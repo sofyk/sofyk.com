@@ -1,5 +1,6 @@
 ---
 layout: post-drawing
+hero_height: is-small
 title: Some People Can't Handle It
 date: 2013-08-25 00:00:06
 author: Sofy Kabachek
