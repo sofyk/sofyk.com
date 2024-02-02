@@ -8,5 +8,4 @@ callouts: callouts
 ---
 ## About
 
-I am a Game Designer (She/Her), coffee addict, undercover physicist, short story writer, married to 
-[@pickedlastjake](https://twitter.com/pickedlastjake).
+I am a Game Designer, coffee addict, undercover physicist, short story writer.
